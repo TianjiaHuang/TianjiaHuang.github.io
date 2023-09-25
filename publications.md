@@ -16,8 +16,10 @@ Download my <a href="https://www.dropbox.com/scl/fi/jv6h8qvno7dp75kecc15y/Resume
 <li><strong><a href="https://onepetro.org/SJ/article/28/02/819/508682/Methane-Diffusion-Through-Nanopore-Throat-Geometry">Methane Diffusion Through Nanopore-Throat Geometry: A Molecular Dynamics Simulation Study</a></strong><br>with Runxuan Sun, Ke Xu, and Dongxiao Zhang;<br><u><i>SPE Journal</i></u><br></li>
 </ol>
 <font size="+2"><strong>Conferences</strong></font><br>
-<strong><a href="https://onepetro.org/SPELACP/proceedings/23LACP/2-23LACP/D021S011R001/520105">Practical Aspects and Implications of Long-Term CO2 Sequestration in Saline Aquifers Using Vertical Wells</a></strong><br>with George Moridis, Reagan Matthew, and Thomas Blasingame;<br><u><i>SPE Latin American and Caribbean Petroleum Engineering Conference</i></u><br>
+<ol>
+<li><strong><a href="https://onepetro.org/SPELACP/proceedings/23LACP/2-23LACP/D021S011R001/520105">Practical Aspects and Implications of Long-Term CO2 Sequestration in Saline Aquifers Using Vertical Wells</a></strong><br>with George Moridis, Reagan Matthew, and Thomas Blasingame;<br><u><i>SPE Latin American and Caribbean Petroleum Engineering Conference</i></u><br></li>
 
-<strong><a href="https://onepetro.org/SPERCSC/proceedings/22RCSC/3-22RCSC/D031S017R001/515759">Feasibility Analysis of Hydrogen Storage in Depleted Natural Reservoirs Through a Multi-Phase Reservoir Simulator</a></strong><br>with George Moridis, Thomas Blasingame, Afifi Abdulkader and Bicheng Yan;<br><u><i>SPE Reservoir Characterisation and Simulation Conference and Exhibition</i></u><br>
+<li><strong><a href="https://onepetro.org/SPERCSC/proceedings/22RCSC/3-22RCSC/D031S017R001/515759">Feasibility Analysis of Hydrogen Storage in Depleted Natural Reservoirs Through a Multi-Phase Reservoir Simulator</a></strong><br>with George Moridis, Thomas Blasingame, Afifi Abdulkader and Bicheng Yan;<br><u><i>SPE Reservoir Characterisation and Simulation Conference and Exhibition</i></u><br></li>
 
-<strong><a href="https://eesa.lbl.gov/2023-tough-symposium/symposium-agenda/">Assessment of Underground Hydrogen Storage Performance in Depleted Gas Reservoir and Aquifer : Using TOUGH + RealGasBrine Simulator</a></strong><br>with George Moridis, and Thomas Blasingame;<br><u><i>10th TOUGH Symposium 2023</i></u><br>
+<li><strong><a href="https://eesa.lbl.gov/2023-tough-symposium/symposium-agenda/">Assessment of Underground Hydrogen Storage Performance in Depleted Gas Reservoir and Aquifer : Using TOUGH + RealGasBrine Simulator</a></strong><br>with George Moridis, and Thomas Blasingame;<br><u><i>10th TOUGH Symposium 2023</i></u><br></li>
+</ol>
