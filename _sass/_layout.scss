@@ -67,7 +67,7 @@ pre code.hljs {
     height: 16px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 80%;
+    border-radius: 50%;
   }
 }
 
@@ -219,15 +219,18 @@ pre code.hljs {
 		padding-top: 1em !important;
 		@extend %default-ul;
 	}
+
 	.post-meta {
 		@include outer-container;
 		// padding: 1em 0;
 		color: $medium-gray;
+
 		.post-date {
 			@include span-columns(6);
 			text-align: left;
 			font-size: 0.9em;
 		}
+
 		.post-categories {
 			@include span-columns(6);
 			margin-right: 0;
@@ -235,54 +238,65 @@ pre code.hljs {
 			font-size: 0.9em;
 		}
 	}
+
 	.pagination {
 		padding-top: 2em;
 		text-align: center;
 		color: $medium-gray;
+
 		.page-number {
 			padding: 0 1em;
 		}
 	}
+
 	.site-header-container {
 		color: $white;
 		text-shadow: 0 2px 1px rgba(0,0,0,0.33);
 		background-color: rgb(105,105,105);
-		.site-header{
+
+		.site-header {
 			.title {
 				font-size: modular-scale(6);
 			}
+
 			.subtitle {
 				font-style: italic;
 				font-size: modular-scale(1);
 			}
 		}
 	}
+
 	blockquote {
 		border-left: solid 4px #2980b9;
 		padding-left: 1.4em;
 		padding-top: 0.25em;
 		font-family: Georgia,Cambria,"Times New Roman",Times,serif;
 	}
+
 	img {
 		display: block;
 		margin: auto;
 		width: 90%;
 	}
+
 	video {
 		display: block;
 		margin: auto;
 		width: 90%;
 	}
+
 	.emoji {
 		display: inline;
 		width: auto;
 	}
+
 	.avatar-round {
 		box-shadow: 0 5px 10px $gray;
 		border-radius: 50%;
 		max-width: none;
 		width: 30%;
 	}
+
 	.quote {
 		margin: auto;
 		padding-left: 3em;
@@ -290,6 +304,7 @@ pre code.hljs {
 		padding-top: 2em;
 		padding-bottom: 2em;
 		text-align: center;
+
 		.quote-content {
 			font-size: 120%;
 			max-width: max-content;
@@ -297,13 +312,16 @@ pre code.hljs {
 			padding-bottom: 1em;
 			opacity: 0.87;
 			margin: auto;
+
 			::before {
 				content: '\201C';
 			}
+
 			::after {
 				content: '\201D';
 			}
 		}
+
 		.quote-author {
 			text-align: right;
 			margin-right: 20px;
@@ -313,10 +331,12 @@ pre code.hljs {
 			justify-content: flex-end;
 			padding-bottom: 1.0em;
 		}
+
 		.quote-author::before {
 			content: "- ";
 		}
 	}
+
 	.lightbox-caption {
 		display: block;
 		width: 100%;
@@ -330,44 +350,54 @@ pre code.hljs {
 		ul {
 			margin-bottom: 1em;
 		}
+
 		.post-header-container {
 			.scrim {
 				padding: 2em 1em 1em 1em;
 			}
 		}
+
 		.post-meta {
 			font-style: italic;
 			padding-bottom: 0em;
 		}
+
 		.post-content {
 			padding: 1em 0;
 		}
+
 		.tags {
 			font-size: 0.9em;
 		}
+
 		.rss {
 			margin: 1em 0 0 0;
 			@include span-columns(12);
+
 			@include media ($tablet) {
 				margin: 1em 0;
 				@include span-columns(6);
 			}
 		}
+
 		.share {
 			font-weight: bold;
 			margin: 0 0 1em 0;
 			@include span-columns(12);
+
 			@include media ($tablet) {
 				@include span-columns(6);
 				margin: 1em 0;
 				text-align: right;
 			}
+
 			a {
 				width: 1em;
 				padding: 0 0.25em;
 				text-decoration: none;
 			}
 		}
+
 		.disqus {
 			@include span-columns(12);
 		}
@@ -380,24 +410,29 @@ pre code.hljs {
 			padding: 0.5em 1em 1em 1em;
 			text-align: center;
 		}
+
 		.posts-list {
 			@extend %default-ul;
+
 			li {
 				padding: modular-scale(-4);
 				padding-left: 0;
 			}
+
 			.desc {
 				font-size: 0.9em;
 			}
+
 			.post-date {
 				color: $medium-gray;
 			}
 		}
+
 		.profile {
-			max-width: 480px;
+			max-width: max-content;
 			margin: auto;
 			padding-bottom: 0.5em;
- 		}
+		}
 	}
 }
 
