@@ -4,27 +4,27 @@ title: Research
 permalink: /research/
 ---
 
-<font size="+2"><strong>Underground Hydrogen Storage</strong></font>
+<font size="+2"><strong>Modeling of Subsurface Gas Flow</strong></font>
 <br>
-<p style="text-align:justify">Underground hydrogen storage emerges as a promising solution to counterbalance the discord between fluctuating renewable energy generation and the constant demand for energy, especially in the context of transitioning from fossil fuels to renewable sources. Utilizing subterranean structures like aquifers and depleted gas reservoirs offers a scalable, high-pressure, secure, cost-efficient, and eco-friendly means of hydrogen storage. Using TOUGH+RealGasBrine, I investigate several aspects regarding the hydrogen storage performance, including leakage into caprock, effect of cushion gas (N2, CO2, CH4), effect of reservoir sites and so on.</p>
+<p style="text-align:justify">Gas flow through the Earth is critically important in geological processes, such as volcanism, as well in subsurface engineering activities, such as nuclear waste disposal, carbon sequestration and hydrogen storage. Subsurface gas migration involves complex processes, including multiphase fluid flow with gas breakthrough, phase change expansion, pressure buildup, as well as potential gas fracturing with rapid gas release that could potentially be catastrophic. Through using and modifying the TOUGH+RealGasBrine, I investigate several topics, such as underground hydrogen storage and CCS.</p>
 <table><tr>
    <td><img src="/figure/hydrogen.gif" alt="hydrogen mesh pic" border="0" title="hydrogenstorage1" ;></td>
    <td><img src="/figure/hydrogen_mesh.jpg" alt="hydrogen anmation" border="0" title="hydrogenstorage2" ;></td>
 </tr></table>
 <br>
 
-<font size="+2"><strong>Nuclear Waste Disposal</strong></font>
+<font size="+2"><strong>Coupled Thermo-hydro-mechanical-chemical (THMC) Processes</strong></font>
 <br>
-<p style="text-align:justify">Deposal of high level nuclear wastes is developing and implementing safe geological repositories for all nuclear waste arising from the use of nuclear energy and from medicine, industry and research. Coupled thermal-hydro-mechanical numerical modeling is conducted to study such problem. Using TOUGH+RealGasBrine and FLAC3D, I investigate the temperature, pressure, and stress response associated with geologic disposal of high-level radioactive nuclear waste over 10,000 years. </p>
+<p style="text-align:justify">Deposal of high level nuclear wastes is developing and implementing safe geological repositories for all nuclear waste arising from the use of nuclear energy and from medicine, industry and research. Coupled thermal-hydro-mechanical numerical modeling is conducted to study such problem. Using and modifying TOUGH+RealGasBrine and FLAC3D, I investigate the temperature, pressure, and stress response associated with geologic disposal of high-level radioactive nuclear waste over 10,000 years. </p>
 <div>
    <img src="/figure/nuclear_mesh.jpg" alt="nuclear mesh pic" style=" width: 1000px; height: 500px; display: block; margin: 0 auto;" title="nuclear1" algin="middle" ;>
    <img src="/figure/nuclear.gif" alt="nuclear anmation" style=" width: 800px; height: 350px; display: block; margin: 0 auto;" title="nuclear2" algin="middle" ;>
 </div>
 <br>
 
-<font size="+2"><strong>Particle Transport in Porous Media</strong></font>
+<font size="+2"><strong>Particle Transport in Porous Media (DEM)</strong></font>
 <br>
-<p style="text-align:justify">The transport of small particles in unconsolidated hydrate-bearing media can cause significant problems. To accurately describe the dynamic system behavior during gas production from HBS, it is necessary to fully account for the numerous coupled processes, including particle transport, evolving during hydrate dissociation. A parallel particle transport code that can function as a stand-alone application  with independent data inputs, in addition to being seamlessly integrated with the pTH+M code, is developed independently by me.</p>
+<p style="text-align:justify">The transport of small particles in unconsolidated hydrate-bearing media can cause significant problems. To accurately describe the dynamic system behavior during gas production from HBS, it is necessary to fully account for the numerous coupled processes, including particle transport, evolving during hydrate dissociation. A parallel particle transport code based on discrete element method (DEM) that can function as a stand-alone application  with independent data inputs, in addition to being seamlessly integrated with the pTH+M code, is developed independently by me.</p>
 <div>
    <img src="/figure/particle1.jpg" alt="particle1" style="display: block; margin: 0 auto;" title="particle1" algin="middle" ;>
    <img src="/figure/particle.jpg" alt="particle" style="display: block; margin: 0 auto;" title="particle2" algin="middle" ;>
@@ -32,9 +32,9 @@ permalink: /research/
 <br>
 
 
-<font size="+2"><strong>Parallel Computing</strong></font>
+<font size="+2"><strong>High-performance Computing</strong></font>
 <br>
-<p style="text-align:justify">The idea behind parallel computing is to break a problem into smaller problems that can be solved simultaneously and independently. I am developing high-performance simulator using (a) MPI (b) OpenMP based on programming language FORTRAN. I parallelized an earlier version of the TOUGH+RealGasBrine code by using METIS partitioning software and the PETSc library. In addition, I parallelized the aforementioned particle transport code.  
+<p style="text-align:justify">The idea behind parallel computing is to break a problem into smaller problems that can be solved simultaneously and independently. I am developing high-performance simulator using (a) MPI (b) OpenMP based on programming language FORTRAN. Besides, I am passionate about optimizing algorithms to improve computational efficiency. Up to now, I parallelized an earlier version of the TOUGH+RealGasBrine code by using METIS partitioning software and the PETSc library. In addition, I parallelized the aforementioned particle transport code.  
 </p>
 <div>
    <img src="/figure/parallel.jpg" alt="parallel" style="display: block; margin: 0 auto;" title="parallel1" algin="middle" ;>
