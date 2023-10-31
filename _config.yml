@@ -1,11 +1,8 @@
 
 # Site settings
-title: TIANJIA HUANG
+title: Tianjia Huang
 name: Tianjia Huang
-subtitle:  Researcher
 email: huangtj@tamu.edu
-description: >
-   Researcher
 baseurl: ""
 url: "https://github.com/TianjiaHuang/TianjiaHuang.github.io/"
 github_username:  TianjiaHuang
