@@ -2,14 +2,13 @@
 # Site settings
 title: Tianjia Huang
 name: Tianjia Huang
-subtitle:  PhD Candidate
 email: huangtj@tamu.edu
 description: >
    PhD Candidate
 baseurl: ""
-url: "https://github.com/TianjiaHuang/TianjiaHuang.github.io/"
+url: "https://tianjiahuang.github.io/"
 github_username:  TianjiaHuang
-disqus_baseurl: "https://github.com/TianjiaHuang/TianjiaHuang.github.io/"
+disqus_baseurl: "https://tianjiahuang.github.io/"
 disqus_shortname: https-tianjiahuang-github-io
 google-site-verification: "KFZs1V7eBfiHnwcm4a-AvJ0OOnMCZjmdzBb_7oYgy0U"
 
