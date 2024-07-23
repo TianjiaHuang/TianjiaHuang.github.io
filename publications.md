@@ -6,7 +6,6 @@ permalink: /Publications/
 
 <font size="+2"><strong>Journal Articles</strong></font><br>
 <ol>
-
 <li><strong><a href="https://pubs.acs.org/doi/full/10.1021/acs.energyfuels.4c01826">Numerical Simulations in Support of a Long-Term Test of Gas Production From Hydrate Accumulations on the Alaska North Slope: Water Production and Associated Design and Management Issues, 2024</a></strong><br>with George Moridis, and Matthew Reagan;<br><u><i>Energy & Fuels</i></u><br></li>
 
 <li><strong><a href="https://pubs.acs.org/doi/full/10.1021/acs.energyfuels.4c01826">Strategies for hydrogen storage in a depleted sandstone reservoir from the San Joaquin Basin, California (USA) based on high-fidelity numerical simulations, 2024</a></strong><br>with Shaowen Mao, Mahamed Mehana, George Moridis, et al;<br><u><i>Journal of Energy Storage</i></u><br></li>
@@ -18,9 +17,8 @@ permalink: /Publications/
 <li><strong><a href="https://www.sciencedirect.com/science/article/pii/S1875510020300937">Numerical modeling for drilling fluid invasion into hydrate-bearing sediments and effects of permeability, 2020</a></strong><br>with Yu Zhang, Gang Li, Xiaosen Li, and Zhaoyang Chen;<br><u><i>Journal of Natural Gas Science and Engineering</i></u><br></li>
 
 <li><strong><a href="https://www.sciencedirect.com/science/article/pii/S0920410520300978">Experimental study of the drilling process in hydrate-bearing sediments under different circulation rates of drilling fluid, 2020</a></strong><br>with Xiaosen Li, Yu Zhang, Yi Wang, and Zhaoyang Chen;<br><u><i>Journal of Petroleum Science and Engineering</i></u><br></li>
-
-
 </ol>
+
 <font size="+2"><strong>Conferences</strong></font><br>
 <ol>
 <li><strong><a href="https://onepetro.org/SPELACP/proceedings/23LACP/2-23LACP/D021S011R001/520105">Analysis of the Performance of Horizontal Wells in the Long-Term CO2 Sequestration in Saline Aquifers</a></strong><br>with George Moridis, Reagan Matthew, and Thomas Blasingame;<br><u><i>SPE Europe Energy Conference and Exhibition, 2024</i></u><br></li>
