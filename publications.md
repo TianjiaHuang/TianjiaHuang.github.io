@@ -14,9 +14,15 @@ Download my <a href="https://www.dropbox.com/scl/fi/jv6h8qvno7dp75kecc15y/Resume
 <li><strong><a href="https://www.sciencedirect.com/science/article/pii/S0360319923028082">Compositional reservoir simulation of underground hydrogen storage in depleted gas reservoirs</a></strong><br>with George Moridis, Thomas Blasingame, Afifi Abdulkader and Bicheng Yan;<br><u><i>International Journal of Hydrogen Energy</i></u><br></li>
 
 <li><strong><a href="https://onepetro.org/SJ/article/28/02/819/508682/Methane-Diffusion-Through-Nanopore-Throat-Geometry">Methane Diffusion Through Nanopore-Throat Geometry: A Molecular Dynamics Simulation Study</a></strong><br>with Runxuan Sun, Ke Xu, and Dongxiao Zhang;<br><u><i>SPE Journal</i></u><br></li>
+
+<li><strong><a href="https://pubs.acs.org/doi/full/10.1021/acs.energyfuels.4c01826">Numerical Simulations in Support of a Long-Term Test of Gas Production From Hydrate Accumulations on the Alaska North Slope: Water Production and Associated Design and Management Issues</a></strong><br>with George Moridis, and Matthew Reagan;<br><u><i>Energy & Fuels</i></u><br></li>
+
+<li><strong><a href="https://pubs.acs.org/doi/full/10.1021/acs.energyfuels.4c01826">Strategies for hydrogen storage in a depleted sandstone reservoir from the San Joaquin Basin, California (USA) based on high-fidelity numerical simulations</a></strong><br>with Shaowen Mao, Mahamed Mehana, George Moridis, et al;<br><u><i>Journal of Energy Storage</i></u><br></li>
 </ol>
 <font size="+2"><strong>Conferences</strong></font><br>
 <ol>
+<li><strong><a href="https://onepetro.org/SPELACP/proceedings/23LACP/2-23LACP/D021S011R001/520105">Analysis of the Performance of Horizontal Wells in the Long-Term CO2 Sequestration in Saline Aquifers</a></strong><br>with George Moridis, Reagan Matthew, and Thomas Blasingame;<br><u><i>SPE Latin American and Caribbean Petroleum Engineering Conference</i></u><br></li>
+
 <li><strong><a href="https://onepetro.org/SPELACP/proceedings/23LACP/2-23LACP/D021S011R001/520105">Practical Aspects and Implications of Long-Term CO2 Sequestration in Saline Aquifers Using Vertical Wells</a></strong><br>with George Moridis, Reagan Matthew, and Thomas Blasingame;<br><u><i>SPE Latin American and Caribbean Petroleum Engineering Conference</i></u><br></li>
 
 <li><strong><a href="https://onepetro.org/SPERCSC/proceedings/22RCSC/3-22RCSC/D031S017R001/515759">Feasibility Analysis of Hydrogen Storage in Depleted Natural Reservoirs Through a Multi-Phase Reservoir Simulator</a></strong><br>with George Moridis, Thomas Blasingame, Afifi Abdulkader and Bicheng Yan;<br><u><i>SPE Reservoir Characterisation and Simulation Conference and Exhibition</i></u><br></li>
