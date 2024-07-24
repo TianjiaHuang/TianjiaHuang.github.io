@@ -42,7 +42,7 @@ pre code.hljs {
 .page-divider {
 	$divider-color: $light-gray;
   display: block;
-  width: 70%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   border-top: 1px solid $divider-color;
@@ -52,7 +52,7 @@ pre code.hljs {
     top: -9px;
     display: block;
     background: $divider-color;
-    width: 18px;
+    width: 24px;
     height: 18px;
     margin-left: auto;
     margin-right: auto;
