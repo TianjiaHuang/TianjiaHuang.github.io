@@ -5,7 +5,6 @@ permalink: /Publications/
 ---
 
 <font size="+2"><strong>Journal Articles</strong></font>
-<p style="text-align:justify">
 <ol>
 <li><strong><a href="https://pubs.acs.org/doi/full/10.1021/acs.energyfuels.4c01826">Numerical Simulations in Support of a Long-Term Test of Gas Production From Hydrate Accumulations on the Alaska North Slope: Water Production and Associated Design and Management Issues, 2024</a></strong><br>with George Moridis, and Matthew Reagan;<br><u><i>Energy & Fuels</i></u><br></li>
 
@@ -18,7 +17,6 @@ permalink: /Publications/
 <li><strong><a href="https://www.sciencedirect.com/science/article/pii/S1875510020300937">Numerical modeling for drilling fluid invasion into hydrate-bearing sediments and effects of permeability, 2020</a></strong><br>with Yu Zhang, Gang Li, Xiaosen Li, and Zhaoyang Chen;<br><u><i>Journal of Natural Gas Science and Engineering</i></u><br></li>
 
 <li><strong><a href="https://www.sciencedirect.com/science/article/pii/S0920410520300978">Experimental study of the drilling process in hydrate-bearing sediments under different circulation rates of drilling fluid, 2020</a></strong><br>with Xiaosen Li, Yu Zhang, Yi Wang, and Zhaoyang Chen;<br><u><i>Journal of Petroleum Science and Engineering</i></u><br></li>
-</p>
 </ol>
 <br>
 <font size="+2"><strong>Conferences</strong></font>
