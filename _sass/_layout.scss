@@ -140,7 +140,7 @@ pre code.hljs {
   	@include outer-container;
     @include clearfix;
     text-align:center;
-    height: 4em;
+    height: 2em;
     position:sticky;
     top: 0;
     bottom: 0;
@@ -202,6 +202,7 @@ pre code.hljs {
   	a {
 	    display: inline-block;
 	    color: $medium-gray;
+       align-items: center;
 	    @include media ($tablet) {
 	      padding-right: 1.5em;
 	    }
