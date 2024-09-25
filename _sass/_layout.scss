@@ -113,10 +113,10 @@ pre code.hljs {
 *	Header
 */
 .navigation {
-	box-shadow: 0 3px rgb(105,105,105);
-   background-color:white;
+	box-shadow: 0 3px black;
+   background-color:black;
    align-items: center;
-   height: 3em;
+   height: 2em;
    font-size: 1.2em;
 	padding: 0 1em;
 	margin: 0;
@@ -141,11 +141,11 @@ pre code.hljs {
   	@include outer-container;
     @include clearfix;
     align-items: center;
-    height: 3em;
+    height: 2em;
     position:sticky;
     top: 0;
     bottom: 0;
-    background-color:white
+    background-color:black
   }
   .logo {
     float: left;
@@ -164,10 +164,10 @@ pre code.hljs {
   }
   nav {
     float: none;
-    padding: 1.25em 0;
+    padding: 0.5em 0;
     @include media ($tablet) {
       float: right;
-      line-height: 1.5em;
+      line-height: 0.5em;
     }
   }
   ul.navigation-menu {
@@ -184,6 +184,7 @@ pre code.hljs {
     }
     &.show {
       display: block;
+      color: white;
     }
   }
   // Nav items
