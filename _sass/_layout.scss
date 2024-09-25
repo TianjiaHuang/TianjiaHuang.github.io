@@ -113,7 +113,8 @@ pre code.hljs {
 *	Header
 */
 .navigation {
-	box-shadow: 0 0 rgb(105,105,105);
+	box-shadow: 0 5px rgb(105,105,105);
+   background-color:#eee;
 	padding: 0 1em;
 	margin: 0;
    position:sticky;
