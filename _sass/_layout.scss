@@ -113,7 +113,7 @@ pre code.hljs {
 *	Header
 */
 .navigation {
-	box-shadow: 0 2px rgb(105,105,105);
+	box-shadow: 0 0 rgb(105,105,105);
 	padding: 0 1em;
 	margin: 0;
    position:sticky;
@@ -137,7 +137,8 @@ pre code.hljs {
   	@include outer-container;
     @include clearfix;
     position:sticky;
-    top: 0
+    top: 0;
+    bottom: 0;
   }
   .logo {
     float: left;
