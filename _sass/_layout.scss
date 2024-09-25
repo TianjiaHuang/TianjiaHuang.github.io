@@ -116,6 +116,8 @@ pre code.hljs {
 	box-shadow: 0 2px rgb(105,105,105);
 	padding: 0 1em;
 	margin: 0;
+   position: -webkit-sticky
+
 	/*
 	*	Navigation Menu - http://refills.bourbon.io/unstyled/ (see "Navigation")
 	*/
@@ -129,14 +131,6 @@ pre code.hljs {
     @include media ($tablet) {
       display: none;
     }
-  }
-  .sticky-header {
-   position: -webkit-sticky;
-   position: sticky;
-   top: 0;
-   background-color: yellow;
-   padding: 50px;
-   font-size: 20px;
   }
   // Nav menu
   .navigation-wrapper {
