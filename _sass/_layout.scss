@@ -113,10 +113,14 @@ pre code.hljs {
 *	Header
 */
 .navigation {
-	box-shadow: 0 2px rgb(105,105,105);
+	box-shadow: 0 3px rgb(105,105,105);
+   background-color:white;
+   align-items: center;
+   height: 3em;
+   font-size: 1.2em;
 	padding: 0 1em;
 	margin: 0;
-   position: -webkit-sticky
+   position: -sticky;
 	/*
 	*	Navigation Menu - http://refills.bourbon.io/unstyled/ (see "Navigation")
 	*/
@@ -135,7 +139,12 @@ pre code.hljs {
   .navigation-wrapper {
   	@include outer-container;
     @include clearfix;
-    position: relative;
+    align-items: center;
+    height: 3em;
+    position:sticky;
+    top: 0;
+    bottom: 0;
+    background-color:white
   }
   .logo {
     float: left;
@@ -193,6 +202,7 @@ pre code.hljs {
   	a {
 	    display: inline-block;
 	    color: $medium-gray;
+       align-items: center;
 	    @include media ($tablet) {
 	      padding-right: 1.5em;
 	    }
