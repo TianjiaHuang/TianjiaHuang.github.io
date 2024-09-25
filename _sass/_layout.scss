@@ -115,7 +115,8 @@ pre code.hljs {
 .navigation {
 	box-shadow: 0 3px rgb(105,105,105);
    background-color:white;
-   height: 10em;
+   align-items: center;
+   height: 3em;
    font-size: 1.2em;
 	padding: 0 1em;
 	margin: 0;
@@ -139,8 +140,8 @@ pre code.hljs {
   .navigation-wrapper {
   	@include outer-container;
     @include clearfix;
-    text-align:center;
-    height: 2em;
+    align-items: center;
+    height: 3em;
     position:sticky;
     top: 0;
     bottom: 0;
