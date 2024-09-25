@@ -168,6 +168,7 @@ pre code.hljs {
     @include media ($tablet) {
       float: right;
       line-height: 0.5em;
+      height:2em;
     }
   }
   ul.navigation-menu {
