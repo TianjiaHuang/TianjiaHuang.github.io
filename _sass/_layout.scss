@@ -164,7 +164,7 @@ pre code.hljs {
   }
   nav {
     float: none;
-    padding: 0.5em 0;
+    padding: 1.0em 0;
     @include media ($tablet) {
       float: right;
       line-height: 0.5em;
@@ -206,7 +206,7 @@ pre code.hljs {
   li.nav-link {
   	a {
 	    display: inline-block;
-	    color: $medium-gray;
+	    color:white;
        align-items: center;
 	    @include media ($tablet) {
 	      padding-right: 1.5em;
