@@ -130,6 +130,14 @@ pre code.hljs {
       display: none;
     }
   }
+  .sticky-header {
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   background-color: yellow;
+   padding: 50px;
+   font-size: 20px;
+  }
   // Nav menu
   .navigation-wrapper {
   	@include outer-container;
