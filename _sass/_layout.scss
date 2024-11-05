@@ -204,7 +204,7 @@ pre code.hljs {
     }
   }
   li.nav-link {
-  	a {
+  	a.current {
 	    display: inline-block;
 	    color:steelblue;
        align-items: center;
@@ -216,8 +216,23 @@ pre code.hljs {
 	  	@include media ($tablet) {
     		padding-right: 1em;
     	}
-    }
-  }
+     }
+   }
+  li.nav-link {
+   a {
+     display: inline-block;
+     color:rgb(255, 255, 255);
+     align-items: center;
+     @include media ($tablet) {
+       padding-right: 1.5em;
+     }
+   }
+   &:last-child a {
+      @include media ($tablet) {
+        padding-right: 1em;
+     }
+     }
+   }
 }
 
 /*
