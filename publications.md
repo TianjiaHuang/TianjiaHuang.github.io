@@ -4,8 +4,6 @@ permalink: /Publications/
 ---
 <font size="+2"><strong>In Review</strong></font>
 <ol>
-<li>Numerical Simulation of Coupled Thermal-Hydro-Mechanical Processes in Geologic Nuclear Waste Disposal with Corrosion-Induced Gas Generation<br><b>Tianjia Huang</b>, Jonny Rutqvist, George Moridis, and Thomas Blasingame; <u><i>Submitted for publication</i></u><br></li>
-
 <li>An Analytical Solution for Diffusion-Driven Hydrate Saturation Evolution Dynamics in Layered Stratum<br><b>Tianjia Huang</b>, Runxuan Sun, Hailong Lu, and Ke Xu; <u><i>Submitted for publication</i></u><br></li>
 
 <li>Extending TOUGH+Hydrate with A Parallel Particle Transport Simulator: Numerical Investigation of Sand Production During Gas Production from Hydrate Deposits<br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Submitted for publication</i></u><br></li>
@@ -15,6 +13,8 @@ permalink: /Publications/
 <br>
 <font size="+2"><strong>Journal Articles</strong></font>
 <ol>
+<li>Numerical Simulation of Coupled Thermal-Hydro-Mechanical Processes in Geologic Nuclear Waste Disposal with Corrosion-Induced Gas Generation, 2024<br><b>Tianjia Huang</b>, Jonny Rutqvist, George Moridis, and Thomas Blasingame; <u><i>journal of rock mechanics and geotechnical engineering, Accpeted</i></u><br></li>
+
 <li><a href="https://www.sciencedirect.com/science/article/pii/S0360319924038916">Numerical simulation of seasonal underground hydrogen storage: Role of the initial gas amount on the round-trip hydrogen recovery efficiency, 2024</a><br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>International Journal of Hydrogen Energy</i></u><br></li>
 
 <li><a href="https://pubs.acs.org/doi/full/10.1021/acs.energyfuels.4c01826">Numerical Simulations in Support of a Long-Term Test of Gas Production From Hydrate Accumulations on the Alaska North Slope: Water Production and Associated Design and Management Issues, 2024</a><br>George Moridis, and Matthew Reagan, <b>Tianjia Huang</b>; <u><i>Energy & Fuels</i></u><br></li>
