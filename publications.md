@@ -32,6 +32,9 @@ permalink: /Publications/
 <br>
 <font size="+2"><strong>Conferences</strong></font>
 <ol>
+
+<li>ANumerical Simulation of Underground Hydrogen Storage in the Manlove Field at Mt Simon, Illinois: Assessment of Feasibility Based on Recovery Efficiency and Geomechanical Response<br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame;<u><i> AGU, 2024</i></u><br></li>
+
 <li><a href="https://onepetro.org/SPELACP/proceedings/23LACP/2-23LACP/D021S011R001/520105">Analysis of the Performance of Horizontal Wells in the Long-Term CO2 Sequestration in Saline Aquifers</a><br>George Moridis, Reagan Matthew, <b>Tianjia Huang</b>, and Thomas Blasingame; <u><i>SPE Europe Energy Conference and Exhibition, 2024</i></u><br></li>
 
 <li><a href="https://onepetro.org/SPELACP/proceedings/23LACP/2-23LACP/D021S011R001/520105">Practical Aspects and Implications of Long-Term CO2 Sequestration in Saline Aquifers Using Vertical Wells</a><br>George Moridis, Reagan Matthew, <b>Tianjia Huang</b>, and Thomas Blasingame; <u><i>SPE Latin American and Caribbean Petroleum Engineering Conference, 2023</i></u><br></li>
