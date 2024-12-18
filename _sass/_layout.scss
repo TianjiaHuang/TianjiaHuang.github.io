@@ -178,7 +178,7 @@ pre code.hljs {
     overflow: visible;
     padding: 0;
     width: 100%;
-    color: white;
+    color: rgb(0, 0, 0);
     align-items: center;
     @include media ($tablet) {
       display: block;
@@ -187,7 +187,7 @@ pre code.hljs {
     }
     &.show {
       display: block;
-      color: white;
+      color: rgb(0, 0, 0);
     }
   }
   // Nav items
@@ -222,7 +222,7 @@ pre code.hljs {
   li.nav-link {
    a {
      display: inline-block;
-     color:rgb(255, 255, 255);
+     color:rgb(0, 0, 0);
      align-items: center;
      @include media ($tablet) {
        padding-right: 1.5em;
