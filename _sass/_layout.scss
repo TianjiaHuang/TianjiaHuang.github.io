@@ -223,6 +223,7 @@ pre code.hljs {
    a {
      display: inline-block;
      color:rgb(0, 0, 0);
+	 font-weight: normal;
      align-items: center;
      @include media ($tablet) {
        padding-right: 1.5em;
