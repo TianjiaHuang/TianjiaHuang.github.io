@@ -141,11 +141,6 @@ pre code.hljs {
       display: none;
     }
   }
-  .navigation.scrolled {
-	background-color: rgb(187, 187, 187); // Adjust to your desired color
-	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-	transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
   
   // Nav menu
   .navigation-wrapper {
@@ -156,12 +151,12 @@ pre code.hljs {
     position:sticky;
     top: 0;
     bottom: 0;
-    background-color:white
-  }
-  .navigation-wrapper.scrolled {
-	background-color: rgb(187, 187, 187); // Adjust to your desired color
-	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    background-color:white;
 	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+	&.scrolled {
+	  background-color: rgb(187, 187, 187); // Adjust as desired
+	  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+	}
   }
   .logo {
     float: left;
