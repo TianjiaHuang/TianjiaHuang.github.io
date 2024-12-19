@@ -114,14 +114,19 @@ pre code.hljs {
 */
 .navigation {
 	box-shadow: 0 3px white;
-   background-color:white;
-   align-items: center;
-   height: 2.5em;
-   font-size: 1.0em;
+	background-color:white;
+	align-items: center;
+	height: 2.5em;
+	font-size: 1.0em;
 	padding: 0 1em;
 	margin: 0;
-   position:sticky;
-   top:0;
+	position:sticky;
+	top:0;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+	&.scrolled {
+	  background-color: steelblue; // Adjust as desired
+	  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+	}
 	/*
 	*	Navigation Menu - http://refills.bourbon.io/unstyled/ (see "Navigation")
 	*/
@@ -136,6 +141,12 @@ pre code.hljs {
       display: none;
     }
   }
+  .navigation.scrolled {
+	background-color: steelblue; // Adjust to your desired color
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
   // Nav menu
   .navigation-wrapper {
   	@include outer-container;
@@ -235,10 +246,6 @@ pre code.hljs {
      }
      }
    }
-   .navbar-fixed-top.scrolled {
-	background-color: #0e0d0d;
-	transition: background-color 200ms linear;
-  }
 }
 
 /*

@@ -34,13 +34,15 @@
           link.classList.add('current');
         }
       });
-
-      $(function () {
-        $(document).scroll(function () {
-          var $nav = $(".navbar-fixed-top");
-          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        });
-      });
+      
+      document.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navigation');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
    </script>
 
   </body>
