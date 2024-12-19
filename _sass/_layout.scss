@@ -124,7 +124,7 @@ pre code.hljs {
 	top:0;
 	transition: background-color 0.3s ease, box-shadow 0.3s ease;
 	&.scrolled {
-	  background-color: steelblue; // Adjust as desired
+	  background-color: rgb(187, 187, 187); // Adjust as desired
 	  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 	}
 	/*
@@ -142,7 +142,7 @@ pre code.hljs {
     }
   }
   .navigation.scrolled {
-	background-color: steelblue; // Adjust to your desired color
+	background-color: rgb(187, 187, 187); // Adjust to your desired color
 	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 	transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
@@ -157,6 +157,11 @@ pre code.hljs {
     top: 0;
     bottom: 0;
     background-color:white
+  }
+  .navigation-wrapper.scrolled {
+	background-color: rgb(187, 187, 187); // Adjust to your desired color
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
   .logo {
     float: left;
