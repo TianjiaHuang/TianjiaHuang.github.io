@@ -124,7 +124,7 @@ pre code.hljs {
 	top:0;
 	transition: background-color 0.3s ease, box-shadow 0.3s ease;
 	&.scrolled {
-	  background-color: rgb(190, 190, 190); // Adjust as desired
+	  background-color: #f0f0f0; // Adjust as desired
 	  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 	}
 	/*
@@ -154,7 +154,7 @@ pre code.hljs {
     background-color:white;
 	transition: background-color 0.3s ease;
 	&.scrolled {
-	  background-color: rgb(190, 190, 190); // Adjust as desired
+	  background-color: #f0f0f0; // Adjust as desired
 	}
   }
   .logo {
