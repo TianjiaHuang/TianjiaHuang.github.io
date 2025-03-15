@@ -13,7 +13,7 @@ permalink: /Publications/
 <br>
 <font size="+2"><strong>Journal Articles</strong></font>
 <ol>
-<li><a href="https://www.sciencedirect.com/science/article/pii/S1674775525001039">Numerical Simulation of Coupled Thermal-Hydro-Mechanical Processes in Geologic Nuclear Waste Disposal with Corrosion-Induced Gas Generation, 2024</a><br><b>Tianjia Huang</b>, Jonny Rutqvist, George Moridis, and Thomas Blasingame; <u><i>journal of rock mechanics and geotechnical engineering</i></u><br></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S1674775525001039">Numerical Simulation of Coupled Thermal-Hydro-Mechanical Processes in Geologic Nuclear Waste Disposal with Corrosion-Induced Gas Generation, 2024</a><br><b>Tianjia Huang</b>, Jonny Rutqvist, George Moridis, and Thomas Blasingame; <u><i>Journal of Rock Mechanics and Geotechnical Engineering</i></u><br></li>
 
 <li><a href="https://www.sciencedirect.com/science/article/pii/S0360319924038916">Numerical simulation of seasonal underground hydrogen storage: Role of the initial gas amount on the round-trip hydrogen recovery efficiency, 2024</a><br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>International Journal of Hydrogen Energy</i></u><br></li>
 
