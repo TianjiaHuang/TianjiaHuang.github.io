@@ -33,6 +33,8 @@ permalink: /Publications/
 <font size="+2"><strong>Conferences</strong></font>
 <ol>
 
+<li>Long-Term Coupled Thermal-Hydro-Mechanical Simulation of Heat and Gas Transport in a Deep Geological Nuclear Waste Repository in Opalinus Clay<br><b>Tianjia Huang</b>, Jonny Rutqvist, George Moridis, and Thomas Blasingame;<u><i> 59th US Rock Mechanics/Geomechanics Symposium (ARMA), June 2025</i></u><br></li>
+
 <li>Numerical Simulation of Underground Hydrogen Storage in the Manlove Field at Mt Simon, Illinois: Assessment of Feasibility Based on Recovery Efficiency and Geomechanical Response<br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame;<u><i> AGU, 2024</i></u><br></li>
 
 <li><a href="https://netl.doe.gov/24RS-GH-proceedings">Extending TOUGH+HYDRATE with a Parallel Particle Transport Simulator: Investigation of Sand Production During Gas Production from Hydrate Deposits</a><br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame;<u><i> NETL Resource Sustainability Project Review Meeting - Gas Hydrates - PROCEEDINGS, 2024</i></u><br></li>
