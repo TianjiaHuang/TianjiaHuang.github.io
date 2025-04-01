@@ -4,11 +4,12 @@ permalink: /Publications/
 ---
 <font size="+2"><strong>In Review</strong></font>
 <ol>
-<li>An Analytical Solution for Diffusion-Driven Hydrate Saturation Evolution Dynamics in Layered Stratum<br><b>Tianjia Huang</b>, Runxuan Sun, Hailong Lu, and Ke Xu; <u><i>Submitted for publication</i></u><br></li>
 
 <li>Extending TOUGH+Hydrate with A Parallel Particle Transport Simulator: Numerical Investigation of Sand Production During Gas Production from Hydrate Deposits<br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Submitted for publication</i></u><br></li>
 
 <li>Numerical Simulation of Underground Hydrogen Storage in the Manlove Field at Mt Simon Sandstone, Illinois: Assessment of Feasibility Based on Hysteresis Effect and Geomechanical Response<br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Submitted for publication</i></u><br></li>
+
+<li>Optimizing Underground Hydrogen Storage in Aquifers: A Case Study Based on the Mt. Simon Sandstone Formation in the Midwest United States<br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Submitted for publication</i></u><br></li>
 </ol>
 <br>
 <font size="+2"><strong>Journal Articles</strong></font>
@@ -32,6 +33,7 @@ permalink: /Publications/
 <br>
 <font size="+2"><strong>Conferences</strong></font>
 <ol>
+<li>Numerical Study of Storage of Hydrogen/Natural Gas Mixtures in Underground Gas Repositories: Effect of the Gas Composition on System Behavior and Energy Recovery<br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame;<u><i> 2025 SPE Europe Energy Conference & Exhibition, June 2025</i></u><br></li>
 
 <li>Long-Term Coupled Thermal-Hydro-Mechanical Simulation of Heat and Gas Transport in a Deep Geological Nuclear Waste Repository in Opalinus Clay<br><b>Tianjia Huang</b>, Jonny Rutqvist, George Moridis, and Thomas Blasingame;<u><i> 59th US Rock Mechanics/Geomechanics Symposium (ARMA), June 2025</i></u><br></li>
 
