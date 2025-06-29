@@ -2,10 +2,10 @@
 # Site settings
 title: Tianjia Huang
 name: Tianjia Huang
-subtitle: PhD Candidate
+subtitle: PhD
 email: huangtj@tamu.edu
 description: >
-   PhD Candidate
+   PhD
 baseurl: ""
 url: "https://tianjiahuang.github.io/"
 github_username:  TianjiaHuang
