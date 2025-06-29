@@ -11,7 +11,7 @@ permalink: /Publications/
 <br>
 <font size="+2"><strong>Journal Articles</strong></font>
 <ol>
-<li><a href="https://www.sciencedirect.com/science/article/pii/S2949908925001700">Improving feasibility of Underground Hydrogen Storage in Aquifers: A Case Study Based on the Mt. Simon Sandstone Formation in the Midwest United States, 2025<br></a><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Gas Science and Engineering</i></u><br></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S2949908925001700">Improving Feasibility of Underground Hydrogen Storage in Aquifers: A Case Study Based on the Mt. Simon Sandstone Formation in the Midwest United States, 2025<br></a><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Gas Science and Engineering</i></u><br></li>
 
 <li>Extending TOUGH+Hydrate with A Parallel Particle Transport Simulator: Numerical Investigation of Sand Production During Gas Production from Hydrate Deposits<br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Computational Particle Mechanics</i></u><br></li>
 
