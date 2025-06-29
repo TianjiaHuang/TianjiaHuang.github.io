@@ -7,12 +7,13 @@ permalink: /Publications/
 
 <li>Numerical Simulation of Underground Hydrogen Storage in the Manlove Field at Mt Simon Sandstone, Illinois: Assessment of Feasibility Based on Hysteresis Effect and Geomechanical Response<br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Submitted for publication</i></u><br></li>
 
-<li>Optimizing Underground Hydrogen Storage in Aquifers: A Case Study Based on the Mt. Simon Sandstone Formation in the Midwest United States<br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Submitted for publication</i></u><br></li>
 </ol>
 <br>
 <font size="+2"><strong>Journal Articles</strong></font>
 <ol>
-<li>Extending TOUGH+Hydrate with A Parallel Particle Transport Simulator: Numerical Investigation of Sand Production During Gas Production from Hydrate Deposits<br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Computational Particle Mechanics, Accepted</i></u><br></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S2949908925001700">Improving feasibility of Underground Hydrogen Storage in Aquifers: A Case Study Based on the Mt. Simon Sandstone Formation in the Midwest United States, 2025<br></a><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Gas Science and Engineering</i></u><br></li>
+
+<li>Extending TOUGH+Hydrate with A Parallel Particle Transport Simulator: Numerical Investigation of Sand Production During Gas Production from Hydrate Deposits<br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Computational Particle Mechanics</i></u><br></li>
 
 <li><a href="https://www.sciencedirect.com/science/article/pii/S1674775525001039">Numerical Simulation of Coupled Thermal-Hydro-Mechanical Processes in Geologic Nuclear Waste Disposal with Corrosion-Induced Gas Generation, 2024</a><br><b>Tianjia Huang</b>, Jonny Rutqvist, George Moridis, and Thomas Blasingame; <u><i>Journal of Rock Mechanics and Geotechnical Engineering</i></u><br></li>
 
