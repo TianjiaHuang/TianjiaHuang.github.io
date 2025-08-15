@@ -3,47 +3,50 @@ layout: page
 title: TOUGH
 permalink: /TOUGH/
 ---
-I will share some of my thourghts and skills on reservoir simulation (based on TOUGH - Suite of simulators for Nonisothermal Multiphase Flow and Transport in Fractured Porous Media) here from time to time.
-Welcome to discuss with me!
+I will share some of my thoughts and skills on reservoir simulation (based on TOUGH - Suite of simulators for Nonisothermal Multiphase Flow and Transport in Fractured Porous Media) here from time to time.
+<br>Welcome to discuss with me, or contact me if you want to post your thoughts here!
+<br>
 
 <font size="+2"><strong>Nonlinear Convergence Problem</strong></font>
 <ol>
-    <p>
+    <p style="text-align:justify">
     Under challenging conditions (e.g., extremely non-linear behavior associated with phase appearance and disappearance), the reduction in the residuals may be difficult ( convergence cannot be attained within a certain number of iterations), often causing a timestep reduction to impractically small levels. Although this may be the unavoidable consequence of the non-linearity of the simulated physical phenomena, there may be tips for analyzing and fixing the problem and accelerating the simulation.
     All convergence problems can be categorized into mathematical or physical problems. Due to the robustness of the TOUGH+, most of the convergence problems stem from inappropriate physical settings. The importance of clear understanding the physical process before starting simulations cannot be overemphasized. The following are several common reasons for nonconvergence.
-    </p>
+    <br>
     <li>Phase changes are the most common reason for nonconvergence problems. On the one hand, if the system is very sensitive to the phase change while the variation in the primary variable is not sufficiently large to support a complete phase transition, the local phase conditions may exhibit repeated oscillations between two thermodynamic states, resulting in small  timesteps.  To alleviate this problem, TOUGH+ introduces variables (Overshoot) specifying enhanced criteria for triggering phase and state change.
         By appropriately setting their values, the simulation allows an easily one-way phase change, instead of the repeated oscillations between two states.  Note that phase changes, if improperly described, could induce numerical discontinuity, causing the Newton-Raphson method impossible to converge. For example, relative permeability or capillary pressure curves with very steep gradients without smoothing at endpoints can lead to derivatives that exceed the computational limits of a given Fortran compiler, causing the Jacobian matrix to become singular when a phase disappears or appears.
-        Therefore, ensuring continuity of the derivatives in Eq. (1.22) by using appropriate smoothing to steep equations (but remaining faithful to the data) is necessary to avoid such problems. This is the reason why tabular relative permeability and/or capillary pressure data are not acceptable input data in TOUGH simulations. Note that incorrect derivatives lead inevitably to successive time decreases to minuscule levels before the simulation is suspended automatically by the code.
+        Therefore, ensuring continuity of the derivatives in governing equations by using appropriate smoothing to steep equations (but remaining faithful to the data) is necessary to avoid such problems. This is the reason why tabular relative permeability and/or capillary pressure data are not acceptable input data in TOUGH simulations. Note that incorrect derivatives lead inevitably to successive time decreases to minuscule levels before the simulation is suspended automatically by the code.
         In other words, successive timestep cutbacks to extremely low levels are a clear indication of wrong derivatives.</li>   
     <li>Simulations often give the appearance of difficulty in converging when the system approaches a steady state. This is because the derivatives in the associated Jacobian (which describe changes in the primary variables) tend toward zero, resulting in a system whose only possible solution is zero. In essence, this is not a convergence difficulty but an indication of a steady state, which is denoted by a rapid increase in the timesteps but with minimal (if any) changes in the primary variables.
         Although it is easy to identify such scenarios if the entire system is approaching the steady state, detecting such phenomena when it occurs locally is challenging without carefully analyzing the physical process. For example, when gas plumes migrate upward under the effects of gravity, in some cases, the grid blocks at the lateral edge of gas plumes constrain the timestep as the difference in flux term between the inflow and outflow is very tiny. These blocks struggle to handle phase transitions.
         A relaxed phase change criterion is recommended if such a local phase transition is not quite critical for the global results.</li>
     <li>It is particularly important to set the global convergence criterion approximately, especially for large-scale simulations involving elements with drastically different volumes. If it is too small, the simulation may need very small timesteps and unacceptably long execution times; if it is too large, then the accuracy of the simulation results may suffer. The default (relative) convergence criterion is 10-5; for very large simulation, this may be relaxed to 10-4, but larger values are discouraged.
         As TOUGH+ determines whether the current timestep is convergence through comparing the maximum relative residual with the defined criterion, using a looser criterion is a better choice for the simulation cases with (i) large number of grid blocks, e.g., millions of degrees of freedom, (ii) long simulation time, e.g., CO2 storage over 50 years, and (iii) smooth solutions or quasi-steady-state solutions without sharp gradients, e.g., in water flow through homogeneous media.</li>
+    </p>
 </ol>
 
 <font size="+2"><strong>Mesh Generation</strong></font>
 <ol>
-    <p>
-        Mesh generation is a critical step in numerical simulation because it directly affects the accuracy, stability, and efficiency of the computational solution.  The basic tenet of practically all numerical simulators is the subdivision of the physical domain into smaller subdomains (volume elements) as a necessary step in order to approximate the solution. The quality and structure of the mesh determine how well the geometry, boundary conditions, and physics are captured.
-        A well-constructed mesh must ensure the solution is accurately resolved in critical areas, such as in the regions with high gradients or with complex physical phenomena. Additionally, to achieve better convergence performance, the mesh should avoid large aspect ratios and sudden transition between coarse and fine volume elements.
-   </p>
+    <p style="text-align:justify">
+    Mesh generation is a critical step in numerical simulation because it directly affects the accuracy, stability, and efficiency of the computational solution.  The basic tenet of practically all numerical simulators is the subdivision of the physical domain into smaller subdomains (volume elements) as a necessary step in order to approximate the solution. The quality and structure of the mesh determine how well the geometry, boundary conditions, and physics are captured.
+    A well-constructed mesh must ensure the solution is accurately resolved in critical areas, such as in the regions with high gradients or with complex physical phenomena. Additionally, to achieve better convergence performance, the mesh should avoid large aspect ratios and sudden transition between coarse and fine volume elements.
     <li>MESHMAKER V1.5  (Moridis 2016) can generate two-dimensional radially symmetric (r, z) meshes, and one-, two-, and three-dimensional rectilinear (Cartesian) grids. It generates grids that are directly usable by all members of the TOUGH+ and TOUGH2 family of codes.</li>
     <li><a href="https://keurfonluu.github.io/toughio/">TOUGHIO (Luu 2020)</a> is an open-source library that provides tools to facilitate pre- and post-processing for TOUGH using Python standards. One important feature is that it can import mesh generated by external software (e.g., Abaqus, FLAC3D, Gmsh) and convert it to a MESH file for TOUGH+.
         This provides significant flexibility for mesh preparing mesh. Some of the mesh structures in this study are designed using Gmsh (Geuzaine and Remacle 2009), which is an open-source 3D finite element mesh generator with a built-in CAD interface and then converted it to the MESH file used by TOUGH+. 
         Note that a good mesh needs to satisfy the orthogonality conditions. Thus, careful checking the quality of the mesh is necessary, and this is especially true for unstructured meshes.
         The detailed workflow in the mesh preparation is as following: (i) Design the mesh in Gmsh, and export a mesh file with the *.msh format, and with the *.vtk format for visualization; (ii) check the quality of the generated mesh by means of the pyvista library in TOUGHIO; (iii) convert the *.msh file to a MESH file using 'read' and 'write_tough' functions integrated in TOUGHIO; and (iv) define the system boundaries in the MESH file.</li>
+    </p>
 </ol>
 
 <font size="+2"><strong>Compiler</strong></font>
+<p style="text-align:justify">
 <ol>
     <li>When I tried to simulation Discrete Fracture Model, which has very small element volumes (1.0e-8) in fracture cells, compiling with option '-o3' in Interl Compiler can cause convergence issues. I think '-O3' employs more aggressive optimizations that affects floating-point prevision.
         I recommend to compile code without optimizations if the cell volume is very small. Not sure if this issues also happen in GNU.</li>
     <li>Release builds may not perform initialization, leading to unpredictable behavior if uninitialized variables are accessed. I recommned to add option to initialize variables to zero for safe side.</li>
     <li>When using parallel code on Linux, If you need to print out the result immediately (The Input/Output is unbuffered), you can set the environment variable named 'export GFORTRAN_UNBUFFERED_ALL=1'.</li>
 </ol>
-
+</p>
 <br>
 
 
