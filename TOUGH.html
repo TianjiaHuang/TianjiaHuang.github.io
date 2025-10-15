@@ -23,7 +23,7 @@ I will share some of my thoughts and skills on reservoir simulation (based on TO
         A relaxed phase change criterion is recommended if such a local phase transition is not quite critical for the global results.</li>
     <li>It is particularly important to set the global convergence criterion approximately, especially for large-scale simulations involving elements with drastically different volumes. If it is too small, the simulation may need very small timesteps and unacceptably long execution times; if it is too large, then the accuracy of the simulation results may suffer. The default (relative) convergence criterion is 10-5; for very large simulation, this may be relaxed to 10-4, but larger values are discouraged.
         As TOUGH+ determines whether the current timestep is convergence through comparing the maximum relative residual with the defined criterion, using a looser criterion is a better choice for the simulation cases with (i) large number of grid blocks, e.g., millions of degrees of freedom, (ii) long simulation time, e.g., CO2 storage over 50 years, and (iii) smooth solutions or quasi-steady-state solutions without sharp gradients, e.g., in water flow through homogeneous media.</li>
-    <li>[TOUGHREACT, personal communication with Dr. Eric Sonnenthal] Dr Sonnenthal:
+    <li><p style="color: red;">[TOUGHREACT, personal communication with Dr. Eric Sonnenthal]</p> Dr Sonnenthal:
         <br>Basically, the closer you can capture how the natural system behaves, the better the convergence of the numerical model. 
         <br>1. Regarding which minerals and species to remove is tricky, because it depends on the purpose of the model (mostly just to look at permeability changes, or also to evaluate production chemistry). Just because a species has a very low concentration does not mean it is not important. It may have a very low solubility, so as soon as it is released through dissolution of one mineral, it is then incorporated almost completely into a secondary mineral, so its concentration in the fluid remains very low.
         <br>2. Removing a few minerals that are not so important probably won't make much difference in the simulation, since the convergence issues depend usually on the more important minerals.
@@ -52,11 +52,11 @@ I will share some of my thoughts and skills on reservoir simulation (based on TO
 <font size="+2"><strong>Compiler</strong></font>
 <p style="text-align:justify">
 <ol>
-    <li>[TOUGH+]: When I tried to simulation Discrete Fracture Model, which has very small element volumes (1.0e-8) in fracture cells, compiling with option '-o3' in Interl Compiler can cause convergence issues. I think '-O3' employs more aggressive optimizations that affects floating-point prevision.
+    <li><p style="color: red;">[TOUGH+]</p>: When I tried to simulation Discrete Fracture Model, which has very small element volumes (1.0e-8) in fracture cells, compiling with option '-o3' in Interl Compiler can cause convergence issues. I think '-O3' employs more aggressive optimizations that affects floating-point prevision.
         I recommend to compile code without optimizations if the cell volume is very small. Not sure if this issues also happen in GNU.</li>
-    <li>[TOUGH+]: Release builds may not perform initialization, leading to unpredictable behavior if uninitialized variables are accessed. I recommned to add option to initialize variables to zero for safe side.</li>
+    <li><p style="color: red;">[TOUGH+]</p>: Release builds may not perform initialization, leading to unpredictable behavior if uninitialized variables are accessed. I recommned to add option to initialize variables to zero for safe side.</li>
     <li>When using parallel code on Linux, If you need to print out the result immediately (The Input/Output is unbuffered), you can set the environment variable named 'export GFORTRAN_UNBUFFERED_ALL=1'.</li>
-    <li>[TOUGHREACT]: If 'Segmentation fault' appears immediately when trying to run the executable file. Increasing the 'OMP_STACKSIZE' environment variables, or decresing the 'Numer of elements' & 'Number of connections' in 'flowpar_v4.inc' to reduce the memory requirements</li>
+    <li><p style="color: red;">[TOUGHREACT]</p>: If 'Segmentation fault' appears immediately when trying to run the executable file. Increasing the 'OMP_STACKSIZE' environment variables, or decresing the 'Numer of elements' & 'Number of connections' in 'flowpar_v4.inc' to reduce the memory requirements</li>
 </ol>
 </p>
 <br>
