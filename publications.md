@@ -6,7 +6,7 @@ permalink: /Publications/
 <font size="+2"><strong>In Review</strong></font>
 <ol>
 
-<li>Numerical Simulation of Underground Hydrogen Storage in the Manlove Field at Mt Simon Sandstone, Illinois: Assessment of Feasibility Based on Hysteresis Effect and Geomechanical Response<br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Submitted for publication</i></u><br></li>
+<li>A Fast and Robust Convergent Algorithm for Rachford-Rice Equations Applicable to Arbitrary Number of Phases <br><b>Tianjia Huang</b>, Russell Johns, and Birol Dindoruk; <u><i>Submitted for publication</i></u><br></li>
 
 </ol>
 <br>
