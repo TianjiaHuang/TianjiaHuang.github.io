@@ -67,22 +67,22 @@ permalink: /TOUGH/
       <span class="warning">[TOUGHREACT, personal communication with Dr. Eric Sonnenthal]</span>
       <ul class="square-list">
         <li>
-          <span class="note-label">a.</span> Capturing natural system behavior improves convergence. Deciding which minerals and species to remove depends on model purpose (for permeability changes only, or production chemistry as well). A species with low concentration can still be important if it has low solubility and quickly reincorporates into secondary minerals.
+          <span class="note-label"></span> Capturing natural system behavior improves convergence. Deciding which minerals and species to remove depends on model purpose (for permeability changes only, or production chemistry as well). A species with low concentration can still be important if it has low solubility and quickly reincorporates into secondary minerals.
         </li>
         <li>
-          <span class="note-label">b.</span> Removing a few less-important minerals usually has little effect; convergence issues typically depend on the more important minerals.
+          <span class="note-label"></span> Removing a few less-important minerals usually has little effect; convergence issues typically depend on the more important minerals.
         </li>
         <li>
-          <span class="note-label">c.</span> Many convergence issues come from placing far-from-equilibrium fluids into hot rock instantaneously. For high-temperature problems, run a 1-block pseudo-steady-state simulation starting at low temperature and step up in ~50C intervals to reservoir temperature. Use the resulting fluid composition as input to the large model. This initialization is critical. Progress carefully from TH to THM to THMC to obtain native-state conditions before injection.
+          <span class="note-label"></span> Many convergence issues come from placing far-from-equilibrium fluids into hot rock instantaneously. For high-temperature problems, run a 1-block pseudo-steady-state simulation starting at low temperature and step up in ~50C intervals to reservoir temperature. Use the resulting fluid composition as input to the large model. This initialization is critical. Progress carefully from TH to THM to THMC to obtain native-state conditions before injection.
         </li>
         <li>
-          <span class="note-label">d.</span> Grid refinement does not strongly affect chemical equilibration, but it does affect time-stepping through fluid velocity. Time steps should be constrained by the Courant limit and reaction rates, which are usually much smaller than typical fluid-flow models.
+          <span class="note-label"></span> Grid refinement does not strongly affect chemical equilibration, but it does affect time-stepping through fluid velocity. Time steps should be constrained by the Courant limit and reaction rates, which are usually much smaller than typical fluid-flow models.
         </li>
         <li>
-          <span class="note-label">e.</span> Reactive surface areas are extremely important and should be calculated based on the conceptual model, then calibrated to native-state conditions.
+          <span class="note-label"></span> Reactive surface areas are extremely important and should be calculated based on the conceptual model, then calibrated to native-state conditions.
         </li>
         <li>
-          <span class="note-label">f.</span> If the Courant limit is much greater than 1, results can be erroneous. Reactive chemistry is not like fluid flow or stress calculations; small concentration errors (for example, 1e-4 or 1e-5) accumulate and directly affect porosity and permeability. If the timestep exceeds the Courant limit, concentrations become unreasonable, convergence degrades, and the run can crash.
+          <span class="note-label"></span> If the Courant limit is much greater than 1, results can be erroneous. Reactive chemistry is not like fluid flow or stress calculations; small concentration errors (for example, 1e-4 or 1e-5) accumulate and directly affect porosity and permeability. If the timestep exceeds the Courant limit, concentrations become unreasonable, convergence degrades, and the run can crash.
         </li>
       </ul>
     </li>
