@@ -1,38 +1,65 @@
 ---
 layout: page
-title: research
+title: Research
 permalink: /research/
 ---
 
-<div style="text-align: left;">
-      
-   <h3 style="color:steelblue;margin-top: 0; margin-bottom: 0; line-height: 1;background-color: #f0f0f0; margin: 0;padding: 20px;">Participated Projects</h3>
+<div style="text-align: left;">     
+   <h3 style="color:steelblue;margin-top: 0; margin-bottom: 0; line-height: 1;background-color: #f0f0f0; margin: 0;padding: 20px;">Research Projects</h3>
    <ul style="text-align: left; display: inline-block; list-style-type: square;">
-      <li>Natural Gas Hydrate FWP - Development, Testing, and Validation of the DEM Based Particle Transport Code (NETL, DOE-FECM)
+      <li>Natural Gas Hydrate FWP: Development, Testing, and Validation of the DEM Based Particle Transport Code (NETL, DOE-FECM)
          <br><b>PIs</b>: Dr. George Moridis, Dr. Thomas Blasingame   
-      <li>Evaluation of Feasibility and Determination of Conditions and Practices for Maximization of Gas Storage and Early Recovery of Residual Hydrocarbon from Depleted Gas Reservoirs (Crisman Institute, TAMU)
+      <li>Gas Storage Optimization: Evaluation of Feasibility and Operating Conditions for Maximization of Gas Storage and Early Recovery of Residual Hydrocarbon in Depleted Reservoirs (Crisman Institute, TAMU)
          <br><b>PIs</b>: Dr. George Moridis, Dr. Thomas Blasingame   
-      <li>Investigation of Coupled Processes in Argillite Rock (LBNL, DOE -NE)
+      <li>Coupled Processes in Argillite: Investigation of Coupled Processes in Argillite Rock (LBNL, DOE-NE)
          <br><b>PIs</b>: Dr. Jonny Rutqvist
-      <li>Cyclic Injection for Commercial Seismic-Safe Geologic H2 Production (CyclicGeoH2) (LBNL, DOE-ARPA-E)
+      <li>CyclicGeoH2: Cyclic Injection for Commercial Seismic-Safe Geologic H2 Production (LBNL, DOE-ARPA-E)
          <br><b>PIs</b>: Dr. Mengsu Hu, Dr. Jonny Rutqvist
    </ul>
 </div>
 
+<div style="text-align: left;">    
+   <h3 style="color:steelblue;margin-top: 0; margin-bottom: 0; line-height: 1;background-color: #f0f0f0; margin: 0;padding: 20px;">Technical Skills</h3>
+   <ul style="text-align: left; display: inline-block; list-style-type: square;">
+      <br><b>Programming & HPC</b>:
+      <ol style="margin-top: 0; text-align: left; display: inline-block;">
+         <li>Languages: Modern Fortran (Advanced), C/C++, Python, MATLAB<br>
+         <li>Parallel Computing: MPI, OpenMP, CUDA (GPU Programming)<br>
+         <li>HPC Environments: Large-scale Linux Clusters, Slurm Workload Manager<br>
+      </ol>
+      <br><b>Simulation Software</b>:
+      <ol style="margin-top: 0; text-align: left; display: inline-block;">
+         <li>TOUGH Suite: TOUGH+RealGasBrine, TOUGH+Hydrate, TOUGHREACT, TOUGH-FLAC<br>
+         <li>Geomechanics: FLAC3D, TOUGH-FLAC (Coupled THM)<br>
+         <li>Custom Development: Independent developer of parallelized Discrete Element Method (DEM) codes<br>
+      </ol>
+      <br><b>Numerical Methods</b>:
+      <ol style="margin-top: 0; text-align: left; display: inline-block;">
+         <li>Coupled Processes: THMC (Thermal-Hydraulic-Mechanical-Chemical) Modeling<br>
+         <li>Discretization: Finite Volume Method (FVM), Embedded Discrete Fracture Model (EDFM)<br>
+         <li>Thermodynamics: High-fidelity Compositional Simulation, Flash Calculations (Rachford-Rice, Gibbs Minimization)<br>
+      </ol>
+      <br><b>Libraries & Tools</b>:
+      <ol style="margin-top: 0; text-align: left; display: inline-block;">
+         <li>Solvers/Mesh: PETSc, METIS, Gmsh, LaGriT<br>
+         <li>Visualization: Tecplot, ParaView<br>
+      </ol>
+   </ul>
+</div>
+
 <hr>
-<h3 style="color:steelblue;margin-top: 0; margin-bottom: 0; line-height: 1; background-color: #f0f0f0; margin: 0;padding: 20px;">Geothermal Energy</h3>
+<h3 style="color:steelblue;margin-top: 0; margin-bottom: 0; line-height: 1; background-color: #f0f0f0; margin: 0;padding: 20px;">Modeling Enhanced Geothermal Systems (EGS)</h3>
 <br>
 <div style="display: flex; align-items: flex-start;">
    <!-- Left column for the content -->
    <div style="flex: 1; padding-right: 20px;">
       <p style="text-align:justify">
-         Enhanced geothermal systems (EGS), or human-made geothermal energy, is the next frontier for renewable energy deployment. In an EGS, fluid is injected deep underground under carefully controlled conditions to create new fractures and cause pre-existing fractures to re-open, creating permeability. 
-         Increased permeability allows fluid to circulate throughout the more fractured hot rock, and the fluid becomes hot as it circulates. I am working on simulating coupled thermal-hydraulic-mechanical-chemical (THMC) processes in EGS. 
-         <br>My current work includes:
+         I simulate coupled Thermal-Hydraulic-Mechanical-Chemical (THMC) processes to optimize heat extraction and system longevity in Enhanced Geothermal Systems. By utilizing the Embedded Discrete Fractures Model (EDFM) and Discrete Fracture Network (DFN), I resolve complex fracture networks at the field scale to address critical flow assurance challenges.
+         <br>Key Contributions:
          <ol style="margin-top: 0; text-align: left; display: inline-block;">
-            <li>Embedded Discrete Fractures Model (EDFM) for field scale EGS simulation<br>
-            <li>Simulating the co-production of geothermal energy and others dissolved solids, such as lithium<br>
-            <li>Mineral precipitation during production of geothermal energy, from fracture scale to field scale<br>
+            <li>Field-scale EGS simulation using EDFM for accurate fracture representation.<br>
+            <li>Predicting mineral precipitation and scaling risks from the fracture to the field scale.<br>
+            <li>Local and global sensitivity analysis of reactive transport processes in fractured geothermal reservoirs.<br>
          </ol>
       </p>
    </div>
@@ -44,7 +71,7 @@ permalink: /research/
 </div>
 <br>
 
-<h3 style="color:steelblue;margin-top: 0; margin-bottom: 0; line-height: 1;background-color: #f0f0f0; margin: 0;padding: 20px;">Advanced Compositional Simulation</h3>
+<h3 style="color:steelblue;margin-top: 0; margin-bottom: 0; line-height: 1;background-color: #f0f0f0; margin: 0;padding: 20px;">High-Fidelity Compositional Simulation</h3>
 <br>
 <div style="display: flex; align-items: flex-start;">
    <!-- Right column for the figures -->
@@ -55,12 +82,11 @@ permalink: /research/
    <!-- Left column for the content -->
    <div style="flex: 1; padding-right: 20px;">
       <p style="text-align:justify">
-         I am working on building a compositional simulator that can improve ability to predict oil recoveries and make robust and rapid simulations for highly compositional processes.
-         <br>My current work includes:
+         I am developing a robust compositional simulator designed to enhance predictive accuracy for complex recovery processes. My work focuses on algorithmic optimization to ensure stability and speed in highly compositional flows.
+         <br>Key Contributions:
          <ol style="margin-top: 0; text-align: left; display: inline-block;">
-            <li>Improving the robustness of flash calculations, either (1) satisfying the equal-fugacity and material-balance constraints or (2) minimizing the mixture Gibbs free energy function<br>
-            <li>Enhancing efficiency of algorithm of solving Rachford-Rick Equation<br>
-            <li>Reduced equations approach to flash calculations<br>
+            <li>Improving robustness by enforcing equal-fugacity and material-balance constraints, and minimizing mixture Gibbs free energy.<br>
+            <li>Accelerating the solution of the Rachford-Rice equation.<br>
          </ol>
       </p>
    </div>
@@ -68,19 +94,17 @@ permalink: /research/
 <br>
 
 
-<h3 style="color:steelblue;margin-top: 0; margin-bottom: 0; line-height: 1; background-color: #f0f0f0; margin: 0;padding: 20px;">High-performance Computing</h3>
+<h3 style="color:steelblue;margin-top: 0; margin-bottom: 0; line-height: 1; background-color: #f0f0f0; margin: 0;padding: 20px;">High-Performance Computing & Parallelization</h3>
 <br>
 <div style="display: flex; align-items: flex-start;">
    <!-- Left column for the content -->
    <div style="flex: 1; padding-right: 20px;">
       <p style="text-align:justify">
-         Parallel computing involves dividing a problem into smaller parts that can be solved concurrently. I have developed high-performance simulators using both MPI and OpenMP with FORTRAN as the base programming language. 
-         I am also passionate about optimizing algorithms and conducting performance analyses. Leveraging advanced high-performance computing clusters, it becomes feasible to simulate coupled problems with finer meshes and more complex physical processes. 
-         For example, tracking the trajectories of millions of particles is computationally intensive. 
-         <br>My work includes:
+         Parallelization I specialize in developing massively parallel simulators using <b>MPI and OpenMP</b> within a Fortran framework. My research leverages advanced clusters to solve computationally intensive problems—such as tracking millions of particles—by optimizing algorithms for scalability and speed. 
+         <br>Key Contributions:
          <ol style="margin-top: 0; text-align: left; display: inline-block;">
-            <li>Parallelizing <a href="https://tough.lbl.gov/software/tough-software/">TOUGH+RealGasBrine</a> using the <a href="https://github.com/KarypisLab/METIS/">METIS</a> and <a href="https://petsc.org/release/">PETSc</a> libraries (MPI)<br>
-            <li>Developing and parallelizing a <a href="https://netl.doe.gov/sites/default/files/netl-file/24RS_GH_Moridis.pdf">Particles Transport code</a> (over 10,000 lines)<br>
+            <li>Integrated <a href="https://github.com/KarypisLab/METIS/">METIS</a> and <a href="https://petsc.org/release/">PETSc</a> libraries into <a href="https://tough.lbl.gov/software/tough-software/">TOUGH+RealGasBrine</a> to enable large-scale parallel processes.<br>
+            <li>Developed and parallelized a custom <a href="https://netl.doe.gov/sites/default/files/netl-file/24RS_GH_Moridis.pdf">Particles Transport code</a> (> 10,000 lines) for high-resolution simulation.<br>
          </ol>
       </p>
    </div>
@@ -103,34 +127,30 @@ permalink: /research/
    <!-- Left column for the content -->
    <div style="flex: 1; padding-right: 20px;">
       <p style="text-align:justify">
-         Particle transport in porous media is a critical research area with significant implications across fields like environmental science, petroleum engineering, and biotechnology. 
-         In petroleum engineering, the transport of small particles in unconsolidated hydrate-bearing sediment (HBS) poses substantial challenges. To accurately simulate gas production from HBS, it's essential to consider the numerous coupled processes, including particle transport. 
-         I independently developed a parallel particle transport code based on the discrete element method (DEM). The code functions as a stand-alone application with independent data inputs and can be seamlessly integrated with reservoir simulation software. 
-         It captures processes such as sand detachment, collision, clogging, and migration during sand particle transport.
-         <br>My work includes:
+         To address sand production challenges in hydrate-bearing sediments, I independently developed a parallelized <b>Discrete Element Method (DEM)</b> code. This application functions as both a standalone tool and a module for reservoir simulators, capturing complex particle-fluid interactions.
+         <br>Key Contributions:
          <ol style="margin-top: 0; text-align: left; display: inline-block;">
-            <li>Designing the code architecture, including modules, subroutines, and core functions<br>
-            <li>Parallelizing the code using MPI to simulate systems involving millions of particles<br>
+            <li>Engineered the full code structure, including core modules and physics subroutines.<br>
+            <li>Implemented MPI parallelization to simulate systems involving millions of distinct particles.<br>
+            <li>Modeled critical mechanisms including sand detachment, inter-particle collision, clogging, and migration.<br>   
          </ol>
       </p>
    </div>
 </div>
 <br>
 
-<h3 style="color:steelblue;margin-top: 0; margin-bottom: 0; line-height: 1;background-color: #f0f0f0; margin: 0;padding: 20px;">Modeling of Subsurface Gas Flow</h3>
+<h3 style="color:steelblue;margin-top: 0; margin-bottom: 0; line-height: 1;background-color: #f0f0f0; margin: 0;padding: 20px;">Subsurface Multiphase Flow: Hydrogen & Carbon Storage </h3>
 <br>
 <div style="display: flex; align-items: flex-start;">
    <!-- Left column for the content -->
    <div style="flex: 1; padding-right: 20px;">
       <p style="text-align:justify">
-         Gas flow through the subsurface is critical for geological processes like volcanism and subsurface engineering activities such as geothermal energy extraction, carbon sequestration, and underground hydrogen storage. 
-         Gas migration in the subsurface involves complex multiphase fluid flow, phase change, pressure buildup, and gas fracturing, which could be catastrophic if uncontrolled. 
-         I use <a href="https://tough.lbl.gov/software/tough-software/">TOUGH+RealGasBrine</a> to simulate the underground hydrogen storage and carbon capture and storage (CCS).
-         <br>My work includes:
+         I utilize the <a href="https://tough.lbl.gov/software/tough-software/">TOUGH+RealGasBrine</a> simulator to model multiphase flow for energy transition applications. My work evaluates the feasibility and safety of <b>Underground Hydrogen Storage (UHS)</b>, <b>Carbon Capture and Sequestration (CCS)</b>, and <b>Geological hydrogen</b> in complex geological formations.
+         <br>Key Contributions:
          <ol style="margin-top: 0; text-align: left; display: inline-block;">
-            <li>Analyzing the feasibility of hydrogen storage in aquifers and depleted gas reservoirs<br>
-            <li>Evaluating the effects of cushion gas, relative permeability hysteresis, and formation type on hydrogen recovery efficiency<br>
-            <li>Investigating the long-term implications of CO2 sequestration in saline formations<br>
+            <li>Assessing UHS potential in saline aquifers and depleted gas reservoirs.<br>
+            <li>Evaluating the impact of cushion gas, relative permeability hysteresis, and formation heterogeneity on H2 recovery.<br>
+            <li>Modeling the 1,000-year implications of CO2 sequestration.<br>
             <li>Modeling cyclic injection for geologic H2 production<br>
          </ol>
       </p>
@@ -143,7 +163,7 @@ permalink: /research/
 </div>
 <br>
 
-<h3 style="color:steelblue;margin-top: 0; margin-bottom: 0; line-height: 1;background-color: #f0f0f0; margin: 0;padding: 20px;">Nuclear Waste Disposal</h3>
+<h3 style="color:steelblue;margin-top: 0; margin-bottom: 0; line-height: 1;background-color: #f0f0f0; margin: 0;padding: 20px;">Geological Nuclear Waste Disposal </h3>
 <br>
 <div style="display: flex; align-items: flex-start;">
    <!-- Right column for the figures -->
@@ -155,12 +175,11 @@ permalink: /research/
    <!-- Left column for the content -->
    <div style="flex: 1; padding-right: 20px;">
       <p style="text-align:justify">
-         Research in geomechanics and underground engineering requires coupled thermal-hydraulic-mechanical-chemical (THMC) modeling. For example, the safe disposal of high-level nuclear waste necessitates robust geological repositories, and THMC numerical modeling helps study these systems over extended periods. 
-         I use TOUGH+FLAC3D to investigate temperature, pressure, and stress responses in geological disposal of high-level radioactive waste over a 10,000-year period.
-         <br>My work includes:
+         Safe disposal of high-level radioactive waste requires rigorous assessment of geological repositories over geological time scales. I employ <b>TOUGH+FLAC3D</b> to model coupled THMC responses, ensuring the long-term integrity of disposal sites.
+         <br>Key Contributions:
          <ol style="margin-top: 0; text-align: left; display: inline-block;">
-            <li>Building a 3D THM-coupled model for predicting gas migration in geological nuclear waste disposal sites<br>
-            <li>Evaluating the effects of heat and gas release from waste canisters on repository performance<br>
+            <li>BDeveloped 3D THM-coupled models to predict gas migration pathways in repository sites.<br>
+            <li>Simulating the impact of heat generation and gas release from waste canisters on rock stability over a 10,000-year period.<br>
          </ol>
       </p>
    </div>
@@ -168,21 +187,17 @@ permalink: /research/
 <br>
 
 
-<h3 style="color:steelblue;margin-top: 0; margin-bottom: 0; line-height: 1;background-color: #f0f0f0; margin: 0;padding: 20px;">Miscellaneous Research</h3>
+<h3 style="color:steelblue;margin-top: 0; margin-bottom: 0; line-height: 1;background-color: #f0f0f0; margin: 0;padding: 20px;">Additional Technical Competencies</h3>
 <br>
 <div style="display: flex; align-items: flex-start;"> 
    <!-- Left column for the content -->
    <div style="flex: 1; padding-right: 20px;">
       <p style="text-align:justify">
-         In addition to my core research areas, I am also competent in the following fields:
-         <br>My work includes:
          <ol style="margin-top: 0; text-align: left; display: inline-block;">
-            <li><b>Mesh Construction</b>
-               <br>I use Gmsh to create specialized meshes, such as Discrete Fracture Network (DFN) meshes, for investigating the effects of fracture creation on geological hydrogen extraction.
+            <li><b>Advanced Mesh Generation</b>
+               <br>Proficient in Gmsh for creating specialized Discrete Fracture Network (DFN) meshes to investigate fracture dynamics.
             <li><b>Natural Gas Hydrate</b>           
-               <br>During my Master's studies, I focused on natural gas hydrates and have expertise in TOUGH+Hydrate. I plan to investigate the feasibility of large-scale CO2 sequestration in hydrate-bearing sediments.
-            <li><b>Machine Learning</b>           
-               <br>While parallelization significantly accelerates particle transport simulations, the computational cost of DEM simulations remains high. Machine learning offers potential for reducing these costs, and my particle transport simulator can generate ample data for training ML models.
+               <br>Extensive experience with TOUGH+Hydrate for modeling phase behavior in hydrate-bearing sediments, with a focus on large-scale CO2 sequestration feasibility.             
          </ol>
       </p>
    </div>
