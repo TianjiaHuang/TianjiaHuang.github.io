@@ -2,115 +2,212 @@
 layout: page
 ---
 <div class="home">
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2RWMC4TCF"></script>
-   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2RWMC4TCF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'G-N2RWMC4TCF');
-   </script>
+    gtag('config', 'G-N2RWMC4TCF');
+  </script>
 
-   <!-- Container for the two-column layout (picture on the left, name/introduction on the right) -->
-   <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 40px;flex-wrap: wrap;width: 100%;">
-      <!-- Left column for the picture -->
-      <div style="flex: 1; padding-right: 20px; max-width: 360px;box-sizing: border-box;">
-         <img src="profile_picture.jpg" alt="Tianjia Huang" style="width:100%; height:auto;" title="Tianjia Huang">
-      </div>
-      
-      <!-- Right column for the name and introduction -->
-      <div style="flex: 1; padding-left: 20px; padding-right: 20px; text-align: left; line-height: 1.2; display: inline-block; min-width: 300px; box-sizing: border-box;">
-         <h1 style="color:steelblue;margin-top: 0;">Tianjia Huang</h1>
-         <p>Postdoctoral Researcher, Petroleum Engineering</p>
-         <p>Texas A&M University</p> 
-         <p>Email: huangtj@tamu.edu</p>
-         <p>CV: <a href="https://www.dropbox.com/scl/fi/jv6h8qvno7dp75kecc15y/Resume-Tianjia-huang.pdf?rlkey=mnf78b8mk4yjp15inec5bqsyj&dl=0" download="Tianjia Huang- CV">Download</a></p>
-         <footer class="site-footer">
-            <div class="wrapper">
-               <div class="site-navigation">
-                  <p><a href="https://scholar.google.com/citations?user=wqBwaGYAAAAJ&hl=en/"><i class="fa fa-graduation-cap"></i> Google Scholar</a></p>
-               </div>        
-               <div class="site-contact">
-                  <p><a href="https://github.com/TianjiaHuang"><i class="fa fa-github"></i> GitHub</a></p>
-               </div>        
-               <div class="site-signature">
-                  <p><a href="https://www.linkedin.com/in/tianjiahuang/"><i class="fa fa-linkedin-square"></i> LinkedIn</a></p>
-               </div>
-            </div>
-         </footer>
-      </div>
-   </div>
+  <style>
+    .hero {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .hero-photo {
+      flex: 1;
+      max-width: 360px;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+    .hero-photo img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .hero-text {
+      flex: 1;
+      min-width: 280px;
+      padding: 0 20px;
+      text-align: left;
+      line-height: 1.35;
+      box-sizing: border-box;
+    }
+    .hero-name {
+      color: steelblue;
+      margin: 0 0 6px;
+    }
+    .section-title {
+      margin: 0 0 10px;
+      line-height: 1.4;
+    }
+    .section {
+      text-align: left;
+      margin: 24px 0;
+    }
+    .square-list {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    .tight-list > li {
+      margin-bottom: 10px;
+    }
+    .contact-list {
+      display: grid;
+      gap: 6px;
+      margin: 12px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    @media (max-width: 820px) {
+      .hero {
+        gap: 16px;
+      }
+      .hero-photo {
+        padding-right: 0;
+      }
+      .hero-text {
+        padding: 0;
+      }
+    }
+  </style>
 
-   <!-- Left content below the introduction -->
-   <hr>
-   <div style="text-align: left;">
-      
-      <h3 style="margin-top: 0; margin-bottom: 0; line-height: 1.5;">Education</h3>
-      <ul style="text-align: left; display: inline-block; list-style-type: square;">
-         <li><a href="https://www.tamu.edu/index.html/">Texas A&M University</a>, College Station, USA
-            <br><b>PhD,</b> Petroleum Engineering (08/2020 - 05/2025)
-            <br>Advisor: Dr. <a href="https://engineering.tamu.edu/petroleum/profiles/gmoridis.html">George Moridis</a> and Dr. <a href="https://engineering.tamu.edu/petroleum/profiles/tblasingame.html">Thomas Blasingame</a>
-            <br>Dissertation: <i>Parallelization Of T+Realgasbrine Simulator for Coupled Processes in Brine and Real Gas Mixtures in Geologic Media, and Particle Transport Extension of the T+Hydrate Code for Sand Production Analysis in Gas-Producing Hydrate Deposits</i>
-            <li><a href="https://english.ucas.ac.cn/">Chinese Academy of Sciences</a>, Guangzhou, China
-            <br><b>M.Eng,</b> Mechanical Engineering (08/2017 - 08/2020)
-            <br>Advisor: Dr. Yu Zhang, Dr. Xiaosen Li 
-         <li><a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a>, Hefei, China
-            <br><b>Non-Degree Coursework,</b> Mechanical Engineering (08/2017 - 08/2018)
-         <li><a href="http://en.xjtu.edu.cn/">Xian Jiaotong University</a>, Xi'an, China
-            <br><b>B.Eng,</b> Building Environmental and Energy Application Engineering (08/2013 - 08/2017)<br>
-      </ul>
-      <hr>
-      <h3 style="margin-top: 0; line-height: 1;">Research Interests</h3>
-      <p style="text-align: justify;">
-         I am a Postdoctoral Researcher at Texas A&M University dedicated to solving complex subsurface energy challenges through high-performance computing. My research bridges the gap between theoretical numerical modeling and real-world applications for the energy transition.
-         Specifically, I develop advanced parallelized simulation tools (extending the <a href="https://tough.lbl.gov/">TOUGH</a> software suite) to model thermal-hydraulic-mechanical-chemical (THMC) dynamics. My work directly supports critical sustainable technologies, including underground hydrogen storage, geologic carbon sequestration, nuclear waste disposal, and geothermal energy. By optimizing these simulations with MPI, I aim to make large-scale, high-fidelity modeling practical for the next generation of energy engineering.
+  <div class="hero">
+    <div class="hero-photo">
+      <img src="profile_picture.jpg" alt="Tianjia Huang" title="Tianjia Huang">
+    </div>
+
+    <div class="hero-text">
+      <h1 class="hero-name">Tianjia Huang</h1>
+      <p>Postdoctoral Researcher, Petroleum Engineering</p>
+      <p>Texas A&amp;M University</p>
+      <p><b>Email:</b> huangtj@tamu.edu</p>
+      <p>
+        <b>CV:</b>
+        <a href="https://www.dropbox.com/scl/fi/jv6h8qvno7dp75kecc15y/Resume-Tianjia-huang.pdf?rlkey=mnf78b8mk4yjp15inec5bqsyj&dl=0" download="Tianjia Huang- CV">Download</a>
       </p>
-      <ol style="margin-top: 0; text-align: left; display: inline-block;">
-         <li><b>Numerical modeling of coupled thermal-hydraulic-mechanical (THM) dynamics in subsurface environment</b><br>
-            <ul style="text-align: left; display: inline-block; list-style-type: square">
-               <li> Underground hydrogen storage in aquifers and depleted hydrocarbon reservoirs
-               <li> Geologic carbon storage in saline formations and natural gas reservoirs
-               <li> Geologic disposal of spent nuclear fuel
-               <li> Extraction of geologic hydrogen from rocks
-            </ul></li>
-         <li><b>Chemical Rock-Fluid interactions in geothermal systems</b><br>
-            <ul style="text-align: left; display: inline-block; list-style-type: square">
-               <li> Mineral scaling and dissolution in enhanced geothermal systems
-               <li> Three-dimensional discrete fracture network (DFN) modeling
-               <li> Sensitivity analysis of reactive transport processes in fractured geothermal reservoirs
-            </ul></li>
-         <li><b>Numerical modeling of particle transport within porous media</b><br>
-            <ul style="text-align: left; display: inline-block; list-style-type: square">
-               <li> Sand production modeling in gas hydrate-bearing sediments
-               <li> Particulate flow modeling using the Discrete Element Method (DEM)
-            </ul></li>
-         <li><b>High-performance computing for complex simulations in petroleum science</b><br>
-            <ul style="text-align: left; display: inline-block; list-style-type: square">
-               <li> Code parallelization using MPI, OpenMPI, and CUDA.
-               <li> Parallel performance analysis using tools like <a href="https://www.cs.uoregon.edu/research/tau/home.php/">TAU performance system</a>
-               <li> Code development and numerical simulation using TOUGH2, <a href="https://tough.lbl.gov/software/tough-software/">TOUGH+</a>, and TOUGH+FLAC3D
-            </ul></li>
-      </ol>
-      <hr>
-      <h3 style="margin-top: 0; margin-bottom: 0; line-height: 1;">Work Experience</h3>
-      <ul style="text-align: left; display: inline-block;list-style-type: square">
-         <li><a href="https://biroldindoruk.engr.tamu.edu/people/">Postdoctoral Researcher</a> at Texas A&M University, USA, 07/2025 - Present
-            <br>Advisor: <a href="https://engineering.tamu.edu/petroleum/profiles/dindoruk-birol.html">Dr. Birol Dindoruk</a> and <a href="https://engineering.tamu.edu/petroleum/profiles/johns-russell.html">Dr. Russell Johns</a>
-         <li>Affiliate Student Interns at Lawrence Berkeley National Laboratory, USA, 08/2024 - Present
-             <br>Advisor: <a href="https://profiles.lbl.gov/19234-jonny-rutqvist/">Dr. Jonny Rutqvist</a>
-         <li>Graduate Research Assistant at Texas A&M University, USA, 08/2021 - Present
-             <br>Advisor: Dr. George Moridis & Dr. Thomas Blasingame
-         <li> <a href="https://sites.google.com/lbl.gov/eesa-student-opportunities/nextgen-nuclear-waste-disposal-internship/">Ingenuity Internship</a> at Lawrence Berkeley National Laboratory, USA, 06/2024 - 08/2024
-             <br>Advisor: Dr. Jonny Rutqvist
-         <li>Graduate Teaching Assistant at Texas A&M University, USA, 01/2024 - 06/2024
-             <br>Advisor: Dr. Thomas Blasingame
-         <li> <a href="https://sites.google.com/lbl.gov/eesa-student-opportunities/nextgen-nuclear-waste-disposal-internship/">Ingenuity Internship</a> at Lawrence Berkeley National Laboratory, USA, 06/2023 - 08/2023
-             <br>Advisor: Dr. Jonny Rutqvist
-         <li> <a href="https://dgym.kaust.edu.sa/people/">Internship</a> at King Abdullah University of Science&Technology, KSA, 06/2022 - 08/2022
-             <br>Advisor: <a href="https://www.kaust.edu.sa/en/study/faculty/bicheng-yan/">Dr. Bicheng Yan</a>
-         <li> <a href="http://39.105.28.132/en/member/">Research Assistant</a> at Peking University, China, 09/2020 - 06/2021
-             <br>Advisor: <a href="https://www.coe.pku.edu.cn/teaching/all_time/7300.html">Dr. Ke Xu</a>
+      <ul class="contact-list">
+        <li><a href="https://scholar.google.com/citations?user=wqBwaGYAAAAJ&hl=en/"><i class="fa fa-graduation-cap"></i> Google Scholar</a></li>
+        <li><a href="https://github.com/TianjiaHuang"><i class="fa fa-github"></i> GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/tianjiahuang/"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
       </ul>
-   </div>
-</div>
+    </div>
+  </div>
 
+  <hr>
+
+  <div class="section">
+    <h3 class="section-title">Education</h3>
+    <ul class="square-list tight-list">
+      <li>
+        <a href="https://www.tamu.edu/index.html/">Texas A&amp;M University</a>, College Station, USA
+        <br><b>PhD,</b> Petroleum Engineering (08/2020 - 05/2025)
+        <br>Advisor: Dr. <a href="https://engineering.tamu.edu/petroleum/profiles/gmoridis.html">George Moridis</a> and Dr. <a href="https://engineering.tamu.edu/petroleum/profiles/tblasingame.html">Thomas Blasingame</a>
+        <br>Dissertation: <i>Parallelization of T+RealGasBrine for coupled processes in brine and real gas mixtures in geologic media, and particle transport extension of T+Hydrate for sand production analysis in gas-producing hydrate deposits</i>
+      </li>
+      <li>
+        <a href="https://english.ucas.ac.cn/">Chinese Academy of Sciences</a>, Guangzhou, China
+        <br><b>M.Eng,</b> Mechanical Engineering (08/2017 - 08/2020)
+        <br>Advisor: Dr. Yu Zhang and Dr. Xiaosen Li
+      </li>
+      <li>
+        <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a>, Hefei, China
+        <br><b>Non-Degree Coursework,</b> Mechanical Engineering (08/2017 - 08/2018)
+      </li>
+      <li>
+        <a href="http://en.xjtu.edu.cn/">Xian Jiaotong University</a>, Xi'an, China
+        <br><b>B.Eng,</b> Building Environmental and Energy Application Engineering (08/2013 - 08/2017)
+      </li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h3 class="section-title">Research Interests</h3>
+    <p>
+      I am a Postdoctoral Researcher at Texas A&amp;M University focused on solving subsurface energy challenges through high-performance computing. My research bridges theoretical numerical modeling and real-world applications for the energy transition. I develop parallelized simulation tools that extend the <a href="https://tough.lbl.gov/">TOUGH</a> software suite to model thermal-hydraulic-mechanical-chemical (THMC) dynamics. This work supports sustainable technologies including underground hydrogen storage, geologic carbon sequestration, nuclear waste disposal, and geothermal energy. By optimizing these simulations with MPI, I aim to make large-scale, high-fidelity modeling practical for the next generation of energy engineering.
+    </p>
+    <ol class="tight-list">
+      <li>
+        <b>Numerical modeling of coupled thermal-hydraulic-mechanical (THM) dynamics in subsurface environments</b>
+        <ul class="square-list">
+          <li>Underground hydrogen storage in aquifers and depleted hydrocarbon reservoirs</li>
+          <li>Geologic carbon storage in saline formations and natural gas reservoirs</li>
+          <li>Geologic disposal of spent nuclear fuel</li>
+          <li>Extraction of geologic hydrogen from rocks</li>
+        </ul>
+      </li>
+      <li>
+        <b>Chemical rock-fluid interactions in geothermal systems</b>
+        <ul class="square-list">
+          <li>Mineral scaling and dissolution in enhanced geothermal systems</li>
+          <li>Three-dimensional discrete fracture network (DFN) modeling</li>
+          <li>Sensitivity analysis of reactive transport in fractured geothermal reservoirs</li>
+        </ul>
+      </li>
+      <li>
+        <b>Numerical modeling of particle transport within porous media</b>
+        <ul class="square-list">
+          <li>Sand production modeling in gas hydrate-bearing sediments</li>
+          <li>Particulate flow modeling using the Discrete Element Method (DEM)</li>
+        </ul>
+      </li>
+      <li>
+        <b>High-performance computing for complex simulations in petroleum science</b>
+        <ul class="square-list">
+          <li>Code parallelization using MPI, OpenMPI, and CUDA</li>
+          <li>Parallel performance analysis using the <a href="https://www.cs.uoregon.edu/research/tau/home.php/">TAU performance system</a></li>
+          <li>Code development and numerical simulation using TOUGH2, <a href="https://tough.lbl.gov/software/tough-software/">TOUGH+</a>, and TOUGH+FLAC3D</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h3 class="section-title">Work Experience</h3>
+    <ul class="square-list tight-list">
+      <li>
+        <a href="https://biroldindoruk.engr.tamu.edu/people/">Postdoctoral Researcher</a> at Texas A&amp;M University, USA (07/2025 - Present)
+        <br>Advisor: <a href="https://engineering.tamu.edu/petroleum/profiles/dindoruk-birol.html">Dr. Birol Dindoruk</a> and <a href="https://engineering.tamu.edu/petroleum/profiles/johns-russell.html">Dr. Russell Johns</a>
+      </li>
+      <li>
+        Affiliate Student Intern at Lawrence Berkeley National Laboratory, USA (08/2024 - Present)
+        <br>Advisor: <a href="https://profiles.lbl.gov/19234-jonny-rutqvist/">Dr. Jonny Rutqvist</a>
+      </li>
+      <li>
+        Graduate Research Assistant at Texas A&amp;M University, USA (08/2021 - Present)
+        <br>Advisor: Dr. George Moridis and Dr. Thomas Blasingame
+      </li>
+      <li>
+        <a href="https://sites.google.com/lbl.gov/eesa-student-opportunities/nextgen-nuclear-waste-disposal-internship/">Ingenuity Internship</a> at Lawrence Berkeley National Laboratory, USA (06/2024 - 08/2024)
+        <br>Advisor: Dr. Jonny Rutqvist
+      </li>
+      <li>
+        Graduate Teaching Assistant at Texas A&amp;M University, USA (01/2024 - 06/2024)
+        <br>Advisor: Dr. Thomas Blasingame
+      </li>
+      <li>
+        <a href="https://sites.google.com/lbl.gov/eesa-student-opportunities/nextgen-nuclear-waste-disposal-internship/">Ingenuity Internship</a> at Lawrence Berkeley National Laboratory, USA (06/2023 - 08/2023)
+        <br>Advisor: Dr. Jonny Rutqvist
+      </li>
+      <li>
+        <a href="https://dgym.kaust.edu.sa/people/">Internship</a> at King Abdullah University of Science and Technology, KSA (06/2022 - 08/2022)
+        <br>Advisor: <a href="https://www.kaust.edu.sa/en/study/faculty/bicheng-yan/">Dr. Bicheng Yan</a>
+      </li>
+      <li>
+        <a href="http://39.105.28.132/en/member/">Research Assistant</a> at Peking University, China (09/2020 - 06/2021)
+        <br>Advisor: <a href="https://www.coe.pku.edu.cn/teaching/all_time/7300.html">Dr. Ke Xu</a>
+      </li>
+    </ul>
+  </div>
+</div>
