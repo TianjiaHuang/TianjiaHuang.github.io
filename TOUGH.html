@@ -3,64 +3,126 @@ layout: page
 title: Personal Opinion
 permalink: /TOUGH/
 ---
-I will share some of my thoughts and skills on reservoir simulation (based on TOUGH+RealGasBrine, TOUGH2, TOUGHREACT, TOUGH+HYDRATE) here from time to time.
-<br>Welcome to discuss with me, or contact me if you want to post your thoughts here!
-<br>
 
-<font size="+2"><strong>Nonlinear Convergence Problem</strong></font>
-<ol>
-    <p style="text-align:justify">
-    Under challenging conditions (e.g., extremely non-linear behavior associated with phase appearance and disappearance), the reduction in the residuals may be difficult ( convergence cannot be attained within a certain number of iterations), often causing a timestep reduction to impractically small levels.
-    All convergence problems can be categorized into mathematical or physical problems. Due to the robustness of the TOUGH+, most of the convergence problems stem from inappropriate physical settings. The importance of clear understanding the physical process before starting simulations cannot be overemphasized.
-    <br>
-    <li>Phase changes are the most common reason for nonconvergence problems. On the one hand, if the system is very sensitive to the phase change while the variation in the primary variable is not sufficiently large to support a complete phase transition, the local phase conditions may exhibit repeated oscillations between two thermodynamic states, resulting in small  timesteps.  To alleviate this problem, TOUGH+ introduces variables (Overshoot) specifying enhanced criteria for triggering phase and state change.
-        By appropriately setting their values, the simulation allows an easily one-way phase change, instead of the repeated oscillations between two states.</li>
-    <li>Note that phase changes, if improperly described, could induce numerical discontinuity, causing the Newton-Raphson method impossible to converge. For example, relative permeability or capillary pressure curves with very steep gradients without smoothing at endpoints can lead to derivatives that exceed the computational limits of a given Fortran compiler, causing the Jacobian matrix to become singular when a phase disappears or appears.
-        Therefore, ensuring continuity of the derivatives in governing equations by using appropriate smoothing to steep equations (but remaining faithful to the data) is necessary to avoid such problems.</li>
-    <li>Note that incorrect derivatives lead inevitably to successive time decreases to minuscule levels before the simulation is suspended automatically by the code. In other words, successive timestep cutbacks to extremely low levels are a clear indication of wrong derivatives.</li>   
-    <li>Simulations often give the appearance of difficulty in converging when the system approaches a steady state. This is because the derivatives in the associated Jacobian (which describe changes in the primary variables) tend toward zero, resulting in a system whose only possible solution is zero. In essence, this is not a convergence difficulty but an indication of a steady state, which is denoted by a rapid increase in the timesteps but with minimal (if any) changes in the primary variables.</li>
-    <li>Although it is easy to identify situation that the entire system is approaching the steady state, detecting such phenomena when it occurs locally is challenging without carefully analyzing the physical process. For example, when gas plumes migrate upward under the effects of gravity, in some cases, the grid blocks at the lateral edge of gas plumes constrain the timestep as the difference in flux term between the inflow and outflow is very tiny. These blocks struggle to handle phase transitions.
-        A relaxed phase change criterion is recommended if such a local phase transition is not quite critical for the global results.</li>
-    <li>It is particularly important to set the global convergence criterion approximately, especially for large-scale simulations involving elements with drastically different volumes. If it is too small, the simulation may need very small timesteps and unacceptably long execution times; if it is too large, then the accuracy of the simulation results may suffer. The default (relative) convergence criterion is 10-5; for very large simulation, this may be relaxed to 10-4, but larger values are discouraged.
-        As TOUGH+ determines whether the current timestep is convergence through comparing the maximum relative residual with the defined criterion, using a looser criterion is a better choice for the simulation cases with (i) large number of grid blocks, e.g., millions of degrees of freedom, (ii) long simulation time, e.g., CO2 storage over 50 years, and (iii) smooth solutions or quasi-steady-state solutions without sharp gradients, e.g., in water flow through homogeneous media.</li>
-    <li><span style="color: red;">[TOUGHREACT, personal communication with Dr. Eric Sonnenthal]</span> 
-        <br>Basically, the closer you can capture how the natural system behaves, the better the convergence of the numerical model. 
-        <br>a. Regarding which minerals and species to remove is tricky, because it depends on the purpose of the model (mostly just to look at permeability changes, or also to evaluate production chemistry). Just because a species has a very low concentration does not mean it is not important. It may have a very low solubility, so as soon as it is released through dissolution of one mineral, it is then incorporated almost completely into a secondary mineral, so its concentration in the fluid remains very low.
-        <br>b. Removing a few minerals that are not so important probably won't make much difference in the simulation, since the convergence issues depend usually on the more important minerals.
-        <br>c. A lot of the convergence issues have to do with putting a far-from-equilibrium fluid into a very hot rock instantaneously. For many of these high-temperature problems, I run a 1-grid block pseudo-steady-state simulation successively starting at low temperature and then going up in ~50C intervals to reach the reservoir temperature. Then I use that fluid composition as input, so I know it converges before putting it in a large model. This initialization of the system is by far the most important set of steps. One must carefully go from a steady-state TH model to a THM model to a THMC model to get the right “native-state” conditions that will run with injection.
-        <br>d. Whether it is a fine grid or a coarse grid does not really affect the chemical equilibration, just the time-stepping because of the fluid velocity. Therefore, the time-stepping needs to be constrained by the Courant limit and the reaction rate, which will be much smaller than a typical fluid flow model requires.  
-        <br>e. The reactive surface areas are extremely important, and they will be different depending on how you set up the model. The surface areas need to be calculated based on the conceptual model of the system, and then calibrated to the native-state conditions. 
-        <br>f. If the Courant limit is much greater than 1, the results will have large errors and likely be completely erroneous. Note that reactive chemistry is not like fluid flow or stress calculations, where small errors are generally acceptable and don't accumulate. Small errors in concentration (e.g., 1.e-4 or 1.e-5) caused by exceeding the Courant limit will result in small changes in the amounts of minerals dissolved or precipitated at every time step, which then feed directly into small changes in porosity and larger changes in permeability at every time step. 
-            These changes are additive, so if the porosity decreases by an extra 0.0001 every time step, and you run 10000 time steps, then 100% of the porosity can be filled up by mineralization just because of the time discretization errors accumulating. The concentration errors can also lead to minerals forming or dissolving that shouldn’t form. A small time step will allow for more accurate concentration which will converge much more easily. If the time step exceeds the Courant limit, the concentration will change unreasonably, and the convergence will be very poor, and the run will just crash. The porosity may just fill up too quickly and then the run will crash.     
-    </li>
-    </p>
-</ol>
+<style>
+  .section-title {
+    color: steelblue;
+    background-color: #f0f0f0;
+    margin: 0 0 12px;
+    padding: 16px 20px;
+    line-height: 1.2;
+  }
+  .section {
+    margin: 20px 0 28px;
+  }
+  .section p {
+    text-align: justify;
+  }
+  .square-list {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  .tight-list > li {
+    margin-bottom: 10px;
+  }
+  .note-label {
+    font-weight: bold;
+  }
+  .warning {
+    color: red;
+  }
+</style>
 
-<font size="+2"><strong>Mesh Generation</strong></font>
-<ol>
-    <p style="text-align:justify">
-    Mesh generation is a critical step in numerical simulation because it directly affects the accuracy, stability, and efficiency of the computational solution. The quality and structure of the mesh determine how well the geometry, boundary conditions, and physics are captured.
-    A well-constructed mesh must ensure the solution is accurately resolved in critical areas, such as in the regions with high gradients or with complex physical phenomena. Additionally, to achieve better convergence performance, the mesh should avoid large aspect ratios and sudden transition between coarse and fine volume elements.
-    <li>MESHMAKER V1.5  (Moridis 2016) can generate two-dimensional radially symmetric (r, z) meshes, and one-, two-, and three-dimensional rectilinear (Cartesian) grids. It generates grids that are directly usable by all members of the TOUGH+ and TOUGH2 family of codes.</li>
-    <li><a href="https://keurfonluu.github.io/toughio/">TOUGHIO (Luu 2020)</a> is an open-source library that provides tools to facilitate pre- and post-processing for TOUGH using Python standards. One important feature is that it can import mesh generated by external software (e.g., Abaqus, FLAC3D, Gmsh) and convert it to a MESH file for TOUGH+.
-        This provides significant flexibility for mesh preparing mesh. Some of the mesh structures in this study are designed using Gmsh (Geuzaine and Remacle 2009), which is an open-source 3D finite element mesh generator with a built-in CAD interface and then converted it to the MESH file used by TOUGH+. 
-        Note that a good mesh needs to satisfy the orthogonality conditions. Thus, careful checking the quality of the mesh is necessary, and this is especially true for unstructured meshes.
-        The detailed workflow in the mesh preparation is as following: (i) Design the mesh in Gmsh, and export a mesh file with the *.msh format, and with the *.vtk format for visualization; (ii) check the quality of the generated mesh by means of the pyvista library in TOUGHIO; (iii) convert the *.msh file to a MESH file using 'read' and 'write_tough' functions integrated in TOUGHIO; and (iv) define the system boundaries in the MESH file.</li>
-    </p>
-</ol>
-
-<font size="+2"><strong>Compiler</strong></font>
-<p style="text-align:justify">
-<ol>
-    <li><span style="color: red;">[TOUGH+]</span>: When I tried to simulation Discrete Fracture Model, which has very small element volumes (1.0e-8) in fracture cells, compiling with option '-o3' in Interl Compiler can cause convergence issues. I think '-O3' employs more aggressive optimizations that affects floating-point precision.
-        I recommend to compile code without optimizations if the cell volume is very small. Not sure if this issues also happen in GNU.</li>
-    <li><span style="color: red;">[TOUGH+]</span>: Release builds may not perform initialization, leading to unpredictable behavior if uninitialized variables are accessed. I recommned to add option to initialize variables to zero for safe side.</li>
-    <li><span style="color: red;">[TOUGH+]</span>: Using initial value of '0' in the INCON file is quite dangerous, as '0' always cause numerical convergence issues, especially for simulation with a large number of elements. I suggest to use a very small value, such as '1.0e-18' for initial condition.</li>
-    <li>When using parallel code on Linux, If you need to print out the result immediately (The Input/Output is unbuffered), you can set the environment variable named 'export GFORTRAN_UNBUFFERED_ALL=1'.</li>
-    <li><span style="color: red;">[TOUGHREACT]</span>: If 'Segmentation fault' appears immediately when trying to run the executable file. Increasing the 'OMP_STACKSIZE' environment variables, or decresing the 'Numer of elements' & 'Number of connections' in 'flowpar_v4.inc' to reduce the memory requirements</li>
-</ol>
+<p>
+  I will share my thoughts and tips on reservoir simulation (TOUGH+RealGasBrine, TOUGH2, TOUGHREACT, TOUGH+HYDRATE) here from time to time.
+  <br>Welcome to discuss with me, or contact me if you would like to post your thoughts here.
 </p>
-<br>
 
+<div class="section">
+  <h3 class="section-title">Nonlinear Convergence Problems</h3>
+  <p>
+    Under challenging conditions (for example, highly nonlinear behavior associated with phase appearance and disappearance), residual reduction may be difficult and convergence may not be attained within a reasonable number of iterations. This often triggers timestep cutbacks to impractically small levels.
+    Convergence problems can be categorized as mathematical or physical. Given the robustness of TOUGH+, most issues stem from inappropriate physical settings. A clear understanding of the physical process before starting simulations cannot be overemphasized.
+  </p>
+  <ol class="tight-list">
+    <li>
+      Phase changes are the most common reason for nonconvergence. If the system is very sensitive to phase change but the variation in primary variables is not large enough to support a complete transition, local phase conditions can oscillate between two thermodynamic states, resulting in very small timesteps. TOUGH+ introduces overshoot variables to trigger phase and state changes more robustly. Proper settings allow one-way phase changes instead of repeated oscillations.
+    </li>
+    <li>
+      Phase changes, if improperly described, can induce numerical discontinuities that prevent Newton-Raphson convergence. For example, relative permeability or capillary pressure curves with steep gradients and no endpoint smoothing can create derivatives that exceed compiler limits, causing the Jacobian to become singular when a phase appears or disappears. Ensure derivative continuity by using appropriate smoothing that remains faithful to the data.
+    </li>
+    <li>
+      Incorrect derivatives inevitably lead to successive timestep cutbacks to minuscule levels before the simulation is suspended automatically. In practice, repeated timestep reductions are a clear indicator of wrong derivatives.
+    </li>
+    <li>
+      Simulations can appear to struggle with convergence as the system approaches steady state. In this case, Jacobian derivatives tend toward zero, and the solution is effectively steady with minimal changes in primary variables. This is not a convergence failure, but an indication of steady state, often accompanied by rapidly increasing timesteps.
+    </li>
+    <li>
+      It is easy to identify steady-state behavior for the whole system, but it can be challenging to detect it locally. For example, when gas plumes migrate upward, grid blocks at the lateral edges can constrain the timestep because inflow and outflow fluxes nearly balance. These blocks struggle with phase transitions, so a relaxed phase-change criterion may be appropriate if local transitions are not critical to global results.
+    </li>
+    <li>
+      Set the global convergence criterion appropriately, especially for large-scale simulations with elements of vastly different volumes. If it is too small, the model requires very small timesteps and long runtimes; if too large, accuracy may suffer. The default relative criterion is 1e-5. For very large simulations, 1e-4 may be acceptable, but larger values are discouraged. A looser criterion is preferable when the model has (i) millions of degrees of freedom, (ii) long simulation times (for example, CO2 storage over 50 years), and (iii) smooth or quasi-steady solutions without sharp gradients.
+    </li>
+    <li>
+      <span class="warning">[TOUGHREACT, personal communication with Dr. Eric Sonnenthal]</span>
+      <ul class="square-list">
+        <li>
+          <span class="note-label">a.</span> Capturing natural system behavior improves convergence. Deciding which minerals and species to remove depends on model purpose (for permeability changes only, or production chemistry as well). A species with low concentration can still be important if it has low solubility and quickly reincorporates into secondary minerals.
+        </li>
+        <li>
+          <span class="note-label">b.</span> Removing a few less-important minerals usually has little effect; convergence issues typically depend on the more important minerals.
+        </li>
+        <li>
+          <span class="note-label">c.</span> Many convergence issues come from placing far-from-equilibrium fluids into hot rock instantaneously. For high-temperature problems, run a 1-block pseudo-steady-state simulation starting at low temperature and step up in ~50C intervals to reservoir temperature. Use the resulting fluid composition as input to the large model. This initialization is critical. Progress carefully from TH to THM to THMC to obtain native-state conditions before injection.
+        </li>
+        <li>
+          <span class="note-label">d.</span> Grid refinement does not strongly affect chemical equilibration, but it does affect time-stepping through fluid velocity. Time steps should be constrained by the Courant limit and reaction rates, which are usually much smaller than typical fluid-flow models.
+        </li>
+        <li>
+          <span class="note-label">e.</span> Reactive surface areas are extremely important and should be calculated based on the conceptual model, then calibrated to native-state conditions.
+        </li>
+        <li>
+          <span class="note-label">f.</span> If the Courant limit is much greater than 1, results can be erroneous. Reactive chemistry is not like fluid flow or stress calculations; small concentration errors (for example, 1e-4 or 1e-5) accumulate and directly affect porosity and permeability. If the timestep exceeds the Courant limit, concentrations become unreasonable, convergence degrades, and the run can crash.
+        </li>
+      </ul>
+    </li>
+  </ol>
+</div>
 
+<div class="section">
+  <h3 class="section-title">Mesh Generation</h3>
+  <p>
+    Mesh generation is critical in numerical simulation because it directly affects accuracy, stability, and efficiency. Mesh quality determines how well geometry, boundary conditions, and physics are captured. A well-constructed mesh resolves key regions with high gradients or complex behavior, avoids large aspect ratios, and prevents abrupt transitions between coarse and fine elements.
+  </p>
+  <ol class="tight-list">
+    <li>
+      MESHMAKER V1.5 (Moridis 2016) can generate two-dimensional radially symmetric (r, z) meshes and one-, two-, and three-dimensional rectilinear (Cartesian) grids. It produces grids directly usable by TOUGH+ and TOUGH2 family codes.
+    </li>
+    <li>
+      <a href="https://keurfonluu.github.io/toughio/">TOUGHIO (Luu 2020)</a> is an open-source library that provides tools for TOUGH pre- and post-processing using Python. It can import meshes from external software (Abaqus, FLAC3D, Gmsh) and convert them to TOUGH MESH files. This enables flexible mesh preparation. In this study, some meshes are created in Gmsh (Geuzaine and Remacle 2009) and converted to TOUGH+ MESH files. Note that a good mesh must satisfy orthogonality conditions, so quality checks are essential, especially for unstructured meshes.
+      <br><br>
+      The recommended workflow is: (i) design the mesh in Gmsh and export *.msh and *.vtk files; (ii) check mesh quality using the pyvista library in TOUGHIO; (iii) convert the *.msh file to a TOUGH MESH file using TOUGHIO read and write functions; and (iv) define system boundaries in the MESH file.
+    </li>
+  </ol>
+</div>
 
+<div class="section">
+  <h3 class="section-title">Compiler</h3>
+  <ol class="tight-list">
+    <li>
+      <span class="warning">[TOUGH+]</span> When simulating Discrete Fracture Models with very small element volumes (for example, 1.0e-8 in fracture cells), compiling with the Intel Compiler option '-O3' can cause convergence issues. The more aggressive optimizations can affect floating-point precision. Consider compiling without optimizations for such cases. I have not confirmed whether the same issue occurs with GNU.
+    </li>
+    <li>
+      <span class="warning">[TOUGH+]</span> Release builds may not initialize variables, leading to unpredictable behavior. Add options to initialize variables to zero for safety.
+    </li>
+    <li>
+      <span class="warning">[TOUGH+]</span> Using an initial value of '0' in the INCON file is risky and often causes convergence issues, especially in large models. Use a very small value such as 1.0e-18 instead.
+    </li>
+    <li>
+      When using parallel code on Linux, set <b>GFORTRAN_UNBUFFERED_ALL=1</b> if you need unbuffered output for immediate printing.
+    </li>
+    <li>
+      <span class="warning">[TOUGHREACT]</span> If a segmentation fault occurs immediately after launch, increase the <b>OMP_STACKSIZE</b> environment variable or reduce the number of elements and connections in <b>flowpar_v4.inc</b> to lower memory requirements.
+    </li>
+  </ol>
+</div>
