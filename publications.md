@@ -1,6 +1,6 @@
 ---
 layout: page
-title: publications
+title: Publications
 permalink: /Publications/
 ---
 <font size="+2"><strong>In Review</strong></font>
