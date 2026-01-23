@@ -38,7 +38,7 @@ permalink: /Publications/
 <ol>
 <li><a href="https://onepetro.org/SPEEURO/proceedings/25EURO/25EURO/692697">Numerical Study of Storage of Hydrogen/Natural Gas Mixtures in Underground Gas Repositories: Effect of the Gas Composition on System Behavior and Energy Recovery</a><br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame;<u><i> 2025 SPE Europe Energy Conference & Exhibition, June 2025</i></u><br></li>
 
-<li>Long-Term Coupled Thermal-Hydro-Mechanical Simulation of Heat and Gas Transport in a Deep Geological Nuclear Waste Repository in Opalinus Clay<br><b>Tianjia Huang</b>, Jonny Rutqvist, George Moridis, and Thomas Blasingame;<u><i> 59th US Rock Mechanics/Geomechanics Symposium (ARMA), June 2025</i></u><br></li>
+<li><a href="https://onepetro.org/ARMAUSRMS/proceedings/ARMA25/ARMA25/D032S044R002/786331">Long-Term Coupled Thermal-Hydro-Mechanical Simulation of Heat and Gas Transport in a Deep Geological Nuclear Waste Repository in Opalinus Clay</a><br><b>Tianjia Huang</b>, Jonny Rutqvist, George Moridis, and Thomas Blasingame;<u><i> 59th US Rock Mechanics/Geomechanics Symposium (ARMA), June 2025</i></u><br></li>
 
 <li>Numerical Simulation of Underground Hydrogen Storage in the Manlove Field at Mt Simon, Illinois: Assessment of Feasibility Based on Recovery Efficiency and Geomechanical Response<br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame;<u><i> AGU, 2024</i></u><br></li>
 
