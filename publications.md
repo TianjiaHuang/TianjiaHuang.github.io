@@ -8,6 +8,7 @@ permalink: /Publications/
 
 <li>A Fast and Robust Convergent Algorithm for Rachford-Rice Equations Applicable to Arbitrary Number of Phases <br><b>Tianjia Huang</b>, Russell Johns, and Birol Dindoruk; <u><i>Submitted for publication</i></u><br></li>
 <li>Efficient Sensitivity Analysis of Mineral Precipitation in Three-Dimensional Discrete Fracture-Matrix Systems for Enhanced Geothermal Energy <br><b>Tianjia Huang</b>, Birol Dindoruk, and Russell Johns; <u><i>Internal Review</i></u><br></li>
+<li>Parallelization of TOUGH+RealGasBrine: A High-Performance Tool for Modeling Non-Isothermal Multiphase Flow and Transport in Subsurface Systems <br><b>Tianjia Huang</b> and George Moridis; <u><i>Internal Review</i></u><br></li>
 
 </ol>
 <br>
