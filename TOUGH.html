@@ -46,6 +46,9 @@ permalink: /TOUGH/
   </p>
   <ol class="tight-list">
     <li>
+      My test results indicate that the stabilized BiConjugate Gradient (BCGS) solver combined with the block Jacobi (BJACOBI) preconditioner consistently provides the most robust and efficient performance across elliptic, parabolic, and hyperbolic governing equations, and is therefore recommended as the default configuration.
+    </li>
+    <li>
       Phase changes are the most common reason for nonconvergence. If the system is very sensitive to phase change but the variation in primary variables is not large enough to support a complete transition, local phase conditions can oscillate between two thermodynamic states, resulting in very small timesteps. TOUGH+ introduces overshoot variables to trigger phase and state changes more robustly. Proper settings allow one-way phase changes instead of repeated oscillations.
     </li>
     <li>
