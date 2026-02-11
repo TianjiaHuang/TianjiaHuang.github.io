@@ -125,6 +125,9 @@ permalink: /TOUGH/
       When using parallel code on Linux, set <b>GFORTRAN_UNBUFFERED_ALL=1</b> if you need unbuffered output for immediate printing.
     </li>
     <li>
+      When running larger simulations (parallel code) on personal computers, sometime it leads to a stack overflow due to deep recursion. The code show fault immediately before iteration. A simaple solution is to command <b>ulimit -s unlimited</b> before the simulation. (No promise that it works for all cases, but it is worth trying if you encounter this issue.)
+    </li>
+    <li>
       <span class="warning">[TOUGHREACT]</span> If a segmentation fault occurs immediately after launch, increase the <b>OMP_STACKSIZE</b> environment variable or reduce the number of elements and connections in <b>flowpar_v4.inc</b> to lower memory requirements.
     </li>
   </ol>
