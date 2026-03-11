@@ -102,6 +102,12 @@ permalink: /TOUGH/
       MESHMAKER V1.5 (Moridis 2016) can generate two-dimensional radially symmetric (r, z) meshes and one-, two-, and three-dimensional rectilinear (Cartesian) grids. It produces grids directly usable by TOUGH+ and TOUGH2 family codes.
     </li>
     <li>
+      <a href="https://lagrit.lanl.gov/">LaGriT</a> is a powerful mesh generation and manipulation tool that can create structured and unstructured meshes. LaGriT is particularly useful for complex geometries and adaptive meshing. The generatd .uge mesh files can be converted to TOUGH MESH format by simple python or MATLAB scripts. They have the same coordinate and connectivity information but different formats.
+    </li>
+    <li>
+      Similar to LaGriT, <a href="https://dfnworks.lanl.gov/">dfnWorks</a> is a tool for generating and manipulating discrete fracture networks (DFN). It also can output .uge files that can be converted to TOUGH MESH format. However, generating a matrix-fracture mesh is not straightforward. A common approach is to generate a matrix mesh and a fracture mesh separately, then merge them by identifying the intersecting elements and connections. I have a paper in preparation that will be opensource the code for this process after the paper is published.
+    </li>
+    <li>
       <a href="https://keurfonluu.github.io/toughio/">TOUGHIO (Luu 2020)</a> is an open-source library that provides tools for TOUGH pre- and post-processing using Python. It can import meshes from external software (Abaqus, FLAC3D, Gmsh) and convert them to TOUGH MESH files. This enables flexible mesh preparation. In this study, some meshes are created in Gmsh (Geuzaine and Remacle 2009) and converted to TOUGH+ MESH files. Note that a good mesh must satisfy orthogonality conditions, so quality checks are essential, especially for unstructured meshes.
       <br><br>
       The recommended workflow is: (i) design the mesh in Gmsh and export *.msh and *.vtk files; (ii) check mesh quality using the pyvista library in TOUGHIO; (iii) convert the *.msh file to a TOUGH MESH file using TOUGHIO read and write functions; and (iv) define system boundaries in the MESH file.
