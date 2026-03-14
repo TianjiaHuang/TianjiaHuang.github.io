@@ -136,43 +136,82 @@ layout: page
   <div class="section">
     <h3 class="section-title">Research Interests</h3>
     <p>
-      I am a Postdoctoral Researcher at Texas A&amp;M University focused on solving subsurface energy challenges through high-performance computing. My research bridges theoretical numerical modeling and real-world applications for the energy transition. I develop parallelized simulation tools that extend the <a href="https://tough.lbl.gov/">TOUGH</a> software suite to model thermal-hydraulic-mechanical-chemical (THMC) dynamics. This work supports sustainable technologies including underground hydrogen storage, geologica hydrogen, geologic carbon sequestration, nuclear waste disposal, and geothermal energy.
+      I am a Postdoctoral Researcher at Texas A&amp;M University working on subsurface energy systems, reactive transport, and computational geomechanics. My research combines high-fidelity numerical modeling with high-performance scientific computing to study coupled thermal-hydraulic-mechanical-chemical processes in geologic media. A central theme of my work is extending the <a href="https://tough.lbl.gov/">TOUGH</a> family of simulators so that fundamental model development translates into tools that can be used for underground hydrogen storage, carbon storage, geothermal energy, natural gas hydrates, and nuclear waste disposal.
+    </p>
     <ol class="tight-list">
       <li>
-        <b>Numerical modeling of coupled thermal-hydraulic-mechanical (THM) dynamics in subsurface environments</b>
-        <ul class="square-list">
-          <li>Underground hydrogen storage in aquifers and depleted hydrocarbon reservoirs</li>
-          <li>Geologic carbon storage in saline formations and natural gas reservoirs</li>
-          <li>Geologic disposal of spent nuclear fuel</li>
-          <li>Extraction of geologic hydrogen from rocks</li>
-          <li>Geomechanical stability analysis in natural gas hydrate-bearing sediments using parallel TOUGH+HYDRATE+Reservoir GeoMechanics Simulator</li>
-          <li>Three-dimensional discrete fracture network (DFN) modeling</li>
-        </ul>
+        <b>Coupled thermal-hydraulic-mechanical processes in subsurface systems</b>
       </li>
       <li>
-        <b>Geochemical reactions in subsurface environments</b>
-        <ul class="square-list">
-          <li>Mineral scaling and dissolution in enhanced geothermal systems</li>
-          <li>Sensitivity analysis of reactive transport in fractured geothermal reservoirs</li>
-          <li>Reactive transport modeling of geochemical interactions using <a href="https://tough.lbl.gov/software/toughreact_v4-13-omp/">TOUGHREACT</a> </li>
-        </ul>
+        <b>Reactive transport and geochemical interactions in porous and fractured media</b>
       </li>
       <li>
-        <b>Numerical modeling of particle transport within porous media</b>
-        <ul class="square-list">
-          <li>Sand production modeling in gas hydrate-bearing sediments</li>
-          <li>Particulate flow modeling using the Discrete Element Method (DEM)</li>
-        </ul>
+        <b>Particle transport and solid-fluid interactions in porous media</b>
       </li>
       <li>
-        <b>High-performance computing for complex simulations in petroleum science</b>
-        <ul class="square-list">
-          <li>Code parallelization using MPI, OpenMPI, and CUDA</li>
-          <li>Parallel performance analysis using the <a href="https://www.cs.uoregon.edu/research/tau/home.php/">TAU performance system</a></li>
-          <li>Code development within TOUGH2, <a href="https://tough.lbl.gov/software/tough-software/">TOUGH+</a>, and TOUGH+FLAC3D</li>
-        </ul>
+        <b>High-performance scientific computing for energy and environmental applications</b>
       </li>
     </ol>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h3 class="section-title">Research Impact &amp; Scientific Software Development</h3>
+    <ul class="square-list tight-list">
+      <li>
+        <b>Parallel TOUGH+RealGasBrine Simulator (Fortran &amp; MPI)</b>
+        <br>Lead Developer: Tianjia Huang &amp; George Moridis
+        <br>Code Access: <a href="https://tough.lbl.gov/software/tough-software/">Serial code</a>; parallel code will be released soon.
+        <ul class="square-list">
+          <li>Parallelized the TOUGH+RealGasBrine simulator for large-scale modeling of non-isothermal multiphase flow and transport in porous and fractured subsurface systems.</li>
+          <li>Achieved scalable performance for simulations with millions of degrees of freedom using PETSc-based parallel solvers and METIS domain decomposition.</li>
+          <li>Conducted systematic performance benchmarking and scalability analysis on high-performance computing clusters.</li>
+          <li>Applied the simulator to underground hydrogen storage in aquifers and depleted hydrocarbon reservoirs, carbon sequestration in saline formations, and other coupled-process subsurface energy studies.</li>
+        </ul>
+      </li>
+      <li>
+        <b>Parallel Particle Transport Module for TOUGH+Hydrate (Fortran &amp; MPI)</b>
+        <br>Lead Developer: Tianjia Huang
+        <br>Code Access: <a href="https://tough.lbl.gov/software/tough-software/">TOUGH+Hydrate</a>; the standalone particle transport module will be open-sourced on GitHub soon.
+        <ul class="square-list">
+          <li>Implemented particle tracking and coupling with multiphase flow fields to capture particle migration, bridging, and clogging processes.</li>
+          <li>Introduced the first reservoir-scale implementation of particle tracking within the TOUGH+Hydrate framework, enabling simulation of particle migration and clogging during gas production.</li>
+        </ul>
+      </li>
+      <li>
+        <b>Multiphase Flash Calculation Algorithms (MATLAB &amp; Python)</b>
+        <br>Lead Developer: Tianjia Huang &amp; Russell Johns
+        <br>Code Access: Will be released via the <a href="https://biroldindoruk.engr.tamu.edu/products/">research group products page</a>.
+        <ul class="square-list">
+          <li>Developed robust algorithms for solving multiphase Rachford-Rice equations with arbitrary numbers of phases and components.</li>
+        </ul>
+      </li>
+      <li>
+        <b>Geothermal Reactive Transport Modeling Framework (Python)</b>
+        <br>Lead Developer: Tianjia Huang
+        <br>Code Access: Will be released on <a href="https://github.com/TianjiaHuang">my GitHub</a> after the paper is accepted.
+        <ul class="square-list">
+          <li>Developed a Python-based framework integrating multiple open-source mesh generation tools to construct three-dimensional matrix-fracture systems for finite-volume reactive transport simulations.</li>
+          <li>Coupled reactive transport models with discrete fracture network representations to analyze mineral precipitation, permeability evolution, and injectivity decline in geothermal reservoirs.</li>
+          <li>Supported studies of geothermal reservoir evolution and reactive transport in porous and fractured media.</li>
+        </ul>
+      </li>
+      <li>
+        <b>Computational Modeling for Subsurface Energy Systems (TOUGH)</b>
+        <br>Lead Developer: Tianjia Huang
+        <br>Code Access: Please feel free to contact me for collaboration.
+        <br>Simulation frameworks developed in this research support modeling of:
+        <ul class="square-list">
+          <li>Underground hydrogen storage and geological hydrogen</li>
+          <li>Geothermal reservoir evolution</li>
+          <li>Carbon sequestration in saline aquifers</li>
+          <li>Nuclear waste repository performance</li>
+          <li>Natural gas hydrate production</li>
+          <li>Multiphysics geomechanical response in complex geologic media</li>
+        </ul>
+      </li>
+    </ul>
   </div>
 
   <hr>
