@@ -6,15 +6,16 @@ permalink: /Publications/
 <font size="+2"><strong>In Review</strong></font>
 <ol>
 
-<li>A Fast and Robust Convergent Algorithm for Rachford-Rice Equations Applicable to Arbitrary Number of Phases <br><b>Tianjia Huang</b>, Russell Johns, and Birol Dindoruk; <u><i>Submitted for publication</i></u><br></li>
 <li>Parallelization of TOUGH+RealGasBrine: A High-Performance Tool for Modeling Non-Isothermal Multiphase Flow and Transport in Subsurface Systems <br><b>Tianjia Huang</b> and George Moridis; <u><i>Submitted for publication</i></u><br></li>
 <li>Impact of Relative Permeability Hysteresis on Hydrogen Recovery and Flow Behavior in Underground Hydrogen Storage: Insights from the Manlove Field <br><b>Tianjia Huang</b>， George Moridis, and Thomas Blasingame; <u><i>Submitted for publication</i></u><br></li>
-<li>Efficient Sensitivity Analysis of Mineral Precipitation in Three-Dimensional Discrete Fracture-Matrix Systems for Enhanced Geothermal Energy <br><b>Tianjia Huang</b>, Birol Dindoruk, and Russell Johns; <u><i>Internal Review</i></u><br></li>
+<li>Efficient Sensitivity Analysis of Mineral Precipitation in Three-Dimensional Discrete Fracture-Matrix Systems for Enhanced Geothermal Energy <br><b>Tianjia Huang</b>, Birol Dindoruk, and Russell Johns; <u><i>Submitted for publication</i></u><br></li>
 
 </ol>
 <br>
 <font size="+2"><strong>Journal Articles</strong></font>
 <ol>
+<li>A Fast and Robust Convergent Algorithm for Rachford-Rice Equations Applicable to Arbitrary Number of Phases <br><b>Tianjia Huang</b>, Russell Johns, and Birol Dindoruk; <u><i>SPE Journal</i></u><br></li>
+
 <li><a href="https://www.sciencedirect.com/science/article/pii/S2949908925001700">Improving Feasibility of Underground Hydrogen Storage in Aquifers: A Case Study Based on the Mt. Simon Sandstone Formation in the Midwest United States, 2025<br></a><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Gas Science and Engineering</i></u><br></li>
 
 <li><a href="https://link.springer.com/article/10.1007/s40571-025-00991-4?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20250710&utm_content=10.1007/s40571-025-00991-4">Extending TOUGH+Hydrate with A Parallel Particle Transport Simulator: Numerical Investigation of Sand Production During Gas Production from Hydrate Deposits, 2025<br></a><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Computational Particle Mechanics</i></u><br></li>
