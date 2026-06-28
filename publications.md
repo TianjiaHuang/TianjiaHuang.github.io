@@ -7,14 +7,13 @@ permalink: /Publications/
 <ol>
 
 <li>Parallelization of TOUGH+RealGasBrine: A High-Performance Tool for Modeling Non-Isothermal Multiphase Flow and Transport in Subsurface Systems <br><b>Tianjia Huang</b> and George Moridis; <u><i>Submitted for publication</i></u><br></li>
-<li>Impact of Relative Permeability Hysteresis on Hydrogen Recovery and Flow Behavior in Underground Hydrogen Storage: Insights from the Manlove Field <br><b>Tianjia Huang</b>， George Moridis, and Thomas Blasingame; <u><i>Submitted for publication</i></u><br></li>
 <li>Efficient Sensitivity Analysis of Mineral Precipitation in Three-Dimensional Discrete Fracture-Matrix Systems for Enhanced Geothermal Energy <br><b>Tianjia Huang</b>, Birol Dindoruk, and Russell Johns; <u><i>Submitted for publication</i></u><br></li>
 
 </ol>
 <br>
 <font size="+2"><strong>Journal Articles</strong></font>
 <ol>
-<li>A Fast and Robust Convergent Algorithm for Rachford-Rice Equations Applicable to Arbitrary Number of Phases <br><b>Tianjia Huang</b>, Russell Johns, and Birol Dindoruk; <u><i>SPE Journal</i></u><br></li>
+<li><a href=https://onepetro.org/SJ/article/doi/10.2118/233767-PA/799611/A-Fast-and-Robust-Convergent-Algorithm-for>A Fast and Robust Convergent Algorithm for Rachford-Rice Equations Applicable to Arbitrary Number of Phases, 2026<br></a><b>Tianjia Huang</b>, Russell Johns, and Birol Dindoruk; <u><i>SPE Journal</i></u><br></li>
 
 <li><a href="https://www.sciencedirect.com/science/article/pii/S2949908925001700">Improving Feasibility of Underground Hydrogen Storage in Aquifers: A Case Study Based on the Mt. Simon Sandstone Formation in the Midwest United States, 2025<br></a><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Gas Science and Engineering</i></u><br></li>
 
@@ -39,6 +38,8 @@ permalink: /Publications/
 <br>
 <font size="+2"><strong>Conferences</strong></font>
 <ol>
+<li><a href="https://onepetro.org/SPEEURO/proceedings/26EURO/26EURO/D021S015R001/800281">Analysis of Pressure Transient Tests and Interpretation of Productivities of Gas Wells in Layered Reservoirs with Skin</a><br><b>Tianjia Huang</b>, George Moridis, Thomas Blasingame, and Erdal Ozkan;<u><i> 2026 SPE Europe Energy Conference & Exhibition, June 2026</i></u><br></li>
+
 <li><a href="https://pangea.stanford.edu/ERE/db/GeoConf/papers/SGW/2026/Jiang1.pdf">Deep-Learning-Based Fracture Network Parameterization and History Matching for Enhanced Geothermal Reservoirs</a><br>Yuebin Fan, <b>Tianjia Huang</b>, and Su Jiang;<u><i> 2026 Stanford Geothermal Workshop, February 2026</i></u><br></li>
 
 <li><a href="https://onepetro.org/SPEEURO/proceedings/25EURO/25EURO/692697">Numerical Study of Storage of Hydrogen/Natural Gas Mixtures in Underground Gas Repositories: Effect of the Gas Composition on System Behavior and Energy Recovery</a><br><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame;<u><i> 2025 SPE Europe Energy Conference & Exhibition, June 2025</i></u><br></li>
