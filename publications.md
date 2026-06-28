@@ -13,7 +13,7 @@ permalink: /Publications/
 <br>
 <font size="+2"><strong>Journal Articles</strong></font>
 <ol>
-<li><a href=https://onepetro.org/SJ/article/doi/10.2118/233767-PA/799611/A-Fast-and-Robust-Convergent-Algorithm-for>A Fast and Robust Convergent Algorithm for Rachford-Rice Equations Applicable to Arbitrary Number of Phases, 2026<br></a><b>Tianjia Huang</b>, Russell Johns, and Birol Dindoruk; <u><i>SPE Journal</i></u><br></li>
+<li><a href="https://onepetro.org/SJ/article/doi/10.2118/233767-PA/799611/A-Fast-and-Robust-Convergent-Algorithm-for">A Fast and Robust Convergent Algorithm for Rachford-Rice Equations Applicable to Arbitrary Number of Phases, 2026<br></a><b>Tianjia Huang</b>, Russell Johns, and Birol Dindoruk; <u><i>SPE Journal</i></u><br></li>
 
 <li><a href="https://www.sciencedirect.com/science/article/pii/S2949908925001700">Improving Feasibility of Underground Hydrogen Storage in Aquifers: A Case Study Based on the Mt. Simon Sandstone Formation in the Midwest United States, 2025<br></a><b>Tianjia Huang</b>, George Moridis, and Thomas Blasingame; <u><i>Gas Science and Engineering</i></u><br></li>
 
