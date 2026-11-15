@@ -22,8 +22,32 @@ permalink: /news/
     color: #1f5f8b;
     border-bottom-color: currentColor;
   }
+
+  .news-benchmark-figure {
+    margin: 1rem 0 2rem;
+  }
+
+  .news-benchmark-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .news-benchmark-figure figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
 </style>
 <br>
+<p class="news-entry">
+  <strong>[2026-11-15]</strong> I implemented OpenMP parallelization for equation-of-state (EOS) evaluation and Jacobian assembly in serial TRGB, and integrated a GPU solver for matrix solving. The GPU solver achieved an <strong>18.87&times; matrix-solving speedup</strong>, reducing matrix-solving time from <strong>449.78 s to 23.84 s</strong>. Combining the GPU solver with OpenMP (8 threads) achieved an <strong>8.61&times; overall speedup</strong> over the CPU baseline, reducing total elapsed time from <strong>679.16 s to 78.84 s</strong>.
+</p>
+<figure class="news-benchmark-figure">
+  <a href="{{ '/figure/trgb-gpu-openmp-benchmark.jpg' | relative_url }}" title="View full-size benchmark">
+    <img src="{{ '/figure/trgb-gpu-openmp-benchmark.jpg' | relative_url }}" width="987" height="139" alt="Serial TRGB benchmark comparing CPU, GPU, and GPU + OpenMP (8 threads). Matrix-solving times: 449.78 s, 23.84 s, and 23.70 s. Overall speedups versus CPU: 1.00×, 2.37×, and 8.61×.">
+  </a>
+  <figcaption>Serial TRGB benchmark: CPU, GPU, and GPU + OpenMP (8 threads). Click the figure to view it at full size.</figcaption>
+</figure>
 <p class="news-entry">
   <strong>[2026-03-11]</strong> My first independent proposal has been selected by the Targeted Proposal Teams (TPT) funding program at Texas A&amp;M University. The proposal is titled "Modeling Mineral Precipitation and Impact on Injectivity Using a 3-Dimensional Discrete Fracture Network Approach in Application to Geothermal Systems."
   <a class="news-link" href="https://research.tamu.edu/funding/targeted-proposal-teams/award-recipients/">View award recipients</a>
