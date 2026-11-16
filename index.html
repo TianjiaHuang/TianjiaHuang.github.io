@@ -164,9 +164,10 @@ layout: page
         <br>Lead Developer: Tianjia Huang &amp; George Moridis
         <br>Code Access: <a href="https://tough.lbl.gov/software/tough-software/">Serial code</a>; parallel code will be released soon.
         <ul class="square-list">
-          <li>Parallelized the TOUGH+RealGasBrine simulator for large-scale modeling of non-isothermal multiphase flow and transport in porous and fractured subsurface systems.</li>
-          <li>Achieved scalable performance for simulations with millions of degrees of freedom using PETSc-based parallel solvers and METIS domain decomposition.</li>
-          <li>Conducted systematic performance benchmarking and scalability analysis on high-performance computing clusters.</li>
+          <li>Developed distributed-memory MPI execution, PETSc solver integration, and dynamic domain repartitioning for non-isothermal compositional multiphase flow.</li>
+          <li>Reduced runtime from 1,360 to 20 minutes on 64 MPI ranks for a benchmark.</li>
+          <li>Accelerated the serial version with OpenMP for EOS evaluation and Jacobian assembly and a GPU solver for matrix solving.</li>
+          <li>Coupled the flow simulator with an in-house parallel geomechanics code for distributed-memory THM simulation.</li>
           <li>Applied the simulator to underground hydrogen storage in aquifers and depleted hydrocarbon reservoirs, carbon sequestration in saline formations, and other coupled-process subsurface energy studies.</li>
         </ul>
       </li>
@@ -175,8 +176,8 @@ layout: page
         <br>Lead Developer: Tianjia Huang &amp; George Moridis
         <br>Code Access: <a href="https://tough.lbl.gov/software/tough-software/">TOUGH+Hydrate</a>; the standalone particle transport module will be open-sourced on <a href="https://github.com/TianjiaHuang">my GitHub</a>.
         <ul class="square-list">
-          <li>Implemented particle tracking and coupling with multiphase flow fields to capture particle migration, bridging, and clogging processes.</li>
-          <li>Introduced the first reservoir-scale implementation of particle tracking within the TOUGH+Hydrate framework, enabling simulation of particle migration and clogging during gas production.</li>
+          <li>Developed a discrete element method module coupled with TOUGH+Hydrate to simulate particle detachment, migration, and clogging in hydrate-bearing sediments.</li>
+          <li>Implemented reservoir-scale simulations involving millions of particles to investigate sand production during gas extraction.</li>
         </ul>
       </li>
       <li>
@@ -204,10 +205,8 @@ layout: page
         <ul class="square-list">
           <li>Underground hydrogen storage and geological hydrogen</li>
           <li>Geothermal reservoir evolution</li>
-          <li>Carbon sequestration in saline aquifers</li>
           <li>Nuclear waste repository performance</li>
           <li>Natural gas hydrate production</li>
-          <li>Multiphysics geomechanical response in complex geologic media</li>
         </ul>
       </li>
     </ul>
